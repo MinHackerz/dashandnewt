@@ -1,7 +1,7 @@
 {
-  "name": "studio-experiments",
+  "name": "dash-and-newt",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Dash & Newt comedy cartoon reels — Remotion",
   "repository": {},
   "license": "UNLICENSED",
   "engines": {
@@ -9,21 +9,41 @@
   },
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@react-three/postprocessing": "3.2.2",
     "@remotion/cli": "4.0.540",
+    "@remotion/google-fonts": "4.0.540",
+    "@remotion/media": "4.0.540",
+    "@remotion/three": "4.0.540",
+    "postprocessing": "6.39.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "remotion": "4.0.540"
+    "remotion": "4.0.540",
+    "three": "0.187.0"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.540",
     "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.187.0",
     "@types/web": "0.0.166",
     "eslint": "10.12.0",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "yaml": "2.9.1"
   },
   "scripts": {
     "dev": "remotion studio",
+    "studio": "remotion studio",
+    "render": "bash tools/render.sh",
+    "sfx": "bash tools/sfx/build.sh",
+    "setup": "python3 -m venv .venv && .venv/bin/pip install -q -r tools/sfx/requirements.txt && bash tools/sfx/build.sh",
+    "publish:prepare": "node tools/publish/cli.mjs prepare",
+    "publish:approve": "node tools/publish/cli.mjs approve",
+    "publish": "node tools/publish/cli.mjs publish",
+    "publish:status": "node tools/publish/cli.mjs status",
+    "publish:auth": "node tools/publish/cli.mjs auth",
+    "publish:test": "node --test tools/publish/test/*.test.mjs",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"

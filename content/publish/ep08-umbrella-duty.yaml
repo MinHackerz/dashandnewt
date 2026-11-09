@@ -1,0 +1,102 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep08-umbrella-duty
+title: Umbrella Duty
+status: draft
+video: out/umbrella-duty.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Never Hand a Kid a Beach Umbrella 🌂💨 | Dash & Newt #Shorts"
+  description: |-
+    One raindrop. Dash's response: umbrella → golf umbrella → a 2.4 m BEACH PARASOL. Maximum protection. ☂️
+
+    Then he asks Newt to “hold this” while he ties his shoe… and a gust hits the shop wall and goes UP. 🌬️
+
+    🧠 The real physics: air resistance F = ½ρv²·C·A grows with AREA. The gust pushes a 4.5 m² parasol up with ~580 N, more than a 25 kg kid weighs (275 N). Bigger umbrella, bigger push.
+
+    What's the most over-the-top thing a friend ever did to “protect” you? 👇
+
+    📌 Moral: Air resistance. Bigger umbrella, bigger push.
+
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #umbrella
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - air resistance
+    - drag force
+    - physics explained
+    - funny physics
+    - umbrella fail
+    - windy day umbrella
+    - beach umbrella flying
+    - wind gust
+    - physics cartoon
+    - 2d animation
+    - animated short
+    - science cartoon
+    - learn physics
+    - overprotective friend
+    - dark humor animation
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~38.6s in the YouTube app.
+instagram:
+  caption: |-
+    Never hand a kid a beach umbrella on a windy day 🌂💨
+
+    One raindrop.
+    Umbrella → golf umbrella → BEACH PARASOL.
+    Maximum protection. ☂️
+
+    “Hold this.” A gust hits the shop wall, goes UP… and so does Newt. Dash jumps — misses by a hair. 🎈
+
+    Physics: drag grows with area. A 4.5 m² parasol in a 58 km/h gust pushes up ~580 N, more than a kid weighs. 🧠
+
+    Who's your overprotective friend? 👇
+
+    Tag the friend who'd 100% hand you the parasol 😂
+    Follow for more funny physics cartoons ✨
+
+    📌 Moral: Air resistance. Bigger umbrella, bigger push.
+
+    #funnyanimation #physics #airresistance #cartoonanimation #dashandnewt
+  cover_frame_s: 38.6
+  alt_text: 2D cartoon animation at a rainy seaside bus stop. A very serious young man in an orange scarf protects a small boy in a party hat from raindrops with an umbrella, then a golf umbrella, then a huge striped beach parasol. He hands the parasol to the boy to tie his shoelace; chalk notes show air resistance, F = ½ρv²·C·A, and an upward push of 580 N against the boy's 275 N weight. A gust lifts the boy over the beach shop roof in slow motion. Later, 1 km up, the boy floats past a hot-air balloon whose passenger lowers his newspaper, nods politely and raises it again.
+  share_to_feed: true
+facebook:
+  title: Never Hand a Kid a Beach Umbrella 🌂💨
+  description: |-
+    One raindrop. Dash's response: umbrella → golf umbrella → a 2.4 m BEACH PARASOL. Maximum protection. ☂️
+
+    Then he asks Newt to “hold this” while he ties his shoe… and a gust hits the shop wall and goes UP. 🌬️
+
+    🧠 The real physics: air resistance F = ½ρv²·C·A grows with AREA. The gust pushes a 4.5 m² parasol up with ~580 N, more than a 25 kg kid weighs (275 N). Bigger umbrella, bigger push.
+
+    What's the most over-the-top thing a friend ever did to “protect” you? 👇
+
+    📌 Moral: Air resistance. Bigger umbrella, bigger push.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

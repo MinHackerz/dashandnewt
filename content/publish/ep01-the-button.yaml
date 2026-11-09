@@ -1,0 +1,85 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep01-the-button
+title: The Button
+status: draft
+video: out/the-button.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "He Pressed the DO NOT PRESS Button 3 Times 🔴 | Dash & Newt #Shorts"
+  description: |-
+    Dash saw the sign. Dash read the sign. Dash pressed it anyway. Three times. 🤦‍♂️
+
+    A crane, a 100 kg anvil, a trapdoor and one free cake — and Newt is the only one who reads the sign.
+
+    Would you have pressed it? Comment YES or NO 👇
+
+    📌 Moral: Read the sign. Share the cake.
+
+    Dash & Newt — brute force vs. physics. Funny stickman shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #stickman #funnyanimation #donotpress #animation
+  tags:
+    - stickman
+    - stickman animation
+    - funny animation
+    - animated shorts
+    - dash and newt
+    - cartoon shorts
+    - do not press button
+    - anvil
+    - stick figure animation
+    - comedy shorts
+    - physics comedy
+    - funny cartoon
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~3.3s in the YouTube app.
+instagram:
+  caption: |-
+    Stickman vs. the DO NOT PRESS button 🔴 (wait for the ending 😭)
+
+    He saw the sign. He read the sign. He pressed it anyway. Three times. 🤦‍♂️
+
+    A short funny stickman animation about curiosity, bad decisions, and the one button you SHOULD have pressed 🎂
+
+    Be honest — would you have pressed it? 👇 Comment YES or NO
+
+    Tag a friend who'd press it 🔴
+    Follow for more funny stickman animations ✨
+
+    📌 Moral: Read the sign. Share the cake.
+
+    #stickmananimation #funnyanimation #donotpressthebutton #2danimation #dashandnewt
+  cover_frame_s: 3.3
+  alt_text: "Funny 2D stickman animation: a stickman with an orange scarf keeps pressing a DO NOT PRESS button under a crane holding a 100 kg anvil. The anvil flattens him, a trapdoor drops him, and a kid in a party hat presses the one button that lowers a free cake — then leaves him a slice."
+  share_to_feed: true
+facebook:
+  title: He Pressed the DO NOT PRESS Button 3 Times 🔴
+  description: |-
+    Dash saw the sign. Dash read the sign. Dash pressed it anyway. Three times. 🤦‍♂️
+
+    A crane, a 100 kg anvil, a trapdoor and one free cake — and Newt is the only one who reads the sign.
+
+    Would you have pressed it? Comment YES or NO 👇
+
+    📌 Moral: Read the sign. Share the cake.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new stickman short every week.
+
+    #donotpress #stickman #dashandnewt
+approval: null
+results: {}

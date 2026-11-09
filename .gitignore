@@ -2,6 +2,19 @@ node_modules
 dist
 .DS_Store
 .env
+.env.*
+# Publishing credentials (tools/publish) — OAuth clients and tokens, never committed
+.secrets/
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Third-party reference frames bundled with the cartoon-3d-short skill: local style study only, never committed
+.claude/skills/cartoon-3d-short/references/frames/
+.claude/skills/cartoon-3d-short/references/sheets/
+
+# Python virtualenv for the numpy/scipy sound generators (tools/sfx)
+.venv/
+
+# Generated sound library (~270 MB): rebuilt byte-for-byte by `npm run sfx` from tools/sfx
+public/sfx/

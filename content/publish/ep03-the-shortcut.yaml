@@ -1,0 +1,98 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep03-the-shortcut
+title: The Shortcut
+status: draft
+video: out/the-shortcut.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "He Took a SHORTCUT to the Ice Cream Truck 🍦 (Physics Said No) | Dash & Newt #Shorts"
+  description: |-
+    Newt took the path. Dash took a "shortcut": a fence, a cactus field, a river and one very angry bull. 🐂💀
+
+    Every jump, splash and tumble follows real physics — gravity, momentum, friction and inertia (yes, even the ice cream).
+
+    Path or shortcut? Comment PATH 🟢 or SHORTCUT 🔴 👇
+
+    📌 Moral: The shortcut is usually the long way.
+
+    Dash & Newt — brute force vs. physics. Funny stickman shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #stickman #funnyanimation #physics #icecream
+  tags:
+    - stickman
+    - stickman animation
+    - funny animation
+    - animated shorts
+    - dash and newt
+    - cartoon shorts
+    - shortcut
+    - funny physics
+    - physics comedy
+    - ice cream truck
+    - bull
+    - inertia
+    - momentum
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~25.8s in the YouTube app.
+instagram:
+  caption: |-
+    Stickman takes a SHORTCUT to the ice cream truck 🍦 (it did not go well 😭)
+
+    The path: 10 minutes.
+    The shortcut: a fence, a cactus field, a river and one very angry bull. 🐂💀
+
+    Every fall, splash and bounce follows real physics — watch till the end for the ending nobody saw coming 🍦➡️👅
+
+    Be honest — path or shortcut? 👇 Comment PATH 🟢 or SHORTCUT 🔴
+
+    Tag the friend who ALWAYS says "I know a shortcut" 😂
+    Follow for more funny stickman animations ✨
+
+    📌 Moral: The shortcut is usually the long way.
+
+    #stickmananimation #funnyphysics #icecreamtruck #funnyanimation #dashandnewt
+  cover_frame_s: 25.8
+  alt_text: "Funny 2D stickman animation in split screen: a kid walks the safe path to an ice cream truck while a stickman with an orange scarf takes a shortcut, gets snagged on a fence, poked by cactus, falls in a river and is launched by a bull. The kid gets the last ice cream; the scoop falls and the bull licks it up."
+  share_to_feed: true
+facebook:
+  title: He Took a SHORTCUT to the Ice Cream Truck 🍦 (Physics Said No)
+  description: |-
+    Newt took the path. Dash took a "shortcut": a fence, a cactus field, a river and one very angry bull. 🐂💀
+
+    Every jump, splash and tumble follows real physics — gravity, momentum, friction and inertia (yes, even the ice cream).
+
+    Path or shortcut? Comment PATH 🟢 or SHORTCUT 🔴 👇
+
+    📌 Moral: The shortcut is usually the long way.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new stickman short every week.
+
+    #physics #stickman #dashandnewt
+approval: null
+results:
+  youtube:
+    state: published
+    manual: true
+    url: null
+    marked_at: 2026-11-03T07:11:06.041Z
+  facebook:
+    state: published
+    manual: true
+    url: null
+    marked_at: 2026-11-03T07:11:06.041Z

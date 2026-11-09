@@ -1,0 +1,107 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep07-saved
+title: Saved!
+status: draft
+video: out/saved.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Overprotective Friend vs. Newton's 2nd Law 🚗 | Dash & Newt #Shorts"
+  description: |-
+    An overprotective friend “saves” his buddy from a passing car… and Newton's Second Law of Motion (F = ma) does the rest. 🚗💨
+
+    Dash is a dead-serious bodyguard. Pigeon? THREAT. Puddle? HAZARD. A car that's staying in its own lane? THREAT LEVEL: MAXIMUM. 🕶️
+
+    One mighty yank later the car drives past safely… but Newt only weighs 25 kg. Same force + tiny mass = HUGE acceleration (a = F ÷ m). 👻
+
+    🧠 The real physics: the pull that launched Newt at about 4 m/s would only move a 70 kg adult about 1.4 m/s (one step). Pull a friend out of danger firmly… but don't heave.
+
+    Be honest: who's the Dash in your friend group? 👇
+
+    📌 Moral: F = ma. Small friend — gentle pull.
+
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #darkhumor
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - newton's second law
+    - f=ma
+    - newton's second law of motion
+    - force mass acceleration
+    - physics explained
+    - funny physics
+    - physics cartoon
+    - dark humor animation
+    - dark humor cartoon
+    - overprotective friend
+    - 2d animation
+    - animated short
+    - science cartoon
+    - learn physics
+    - physics shorts
+    - slow motion
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~15.6s in the YouTube app.
+instagram:
+  caption: |-
+    Overprotective friend vs. Newton's 2nd Law 🕶️🚗
+
+    Pigeon? Threat neutralised.
+    Puddle? Hazard cleared.
+    A car in its own lane? THREAT LEVEL: MAXIMUM. 🚨
+
+    One mighty yank later the car passes safely… but Newt weighs 25 kg. F = ma: same pull, tiny mass, HUGE acceleration. 👻
+
+    Physics tip: pull a friend out of danger firmly, never heave. 🧠
+
+    Who's your over-protective friend? 👇
+
+    Tag the friend who would 100% do this 😂
+    Follow for more funny physics cartoons ✨
+
+    📌 Moral: F = ma. Small friend — gentle pull.
+
+    #funnyanimation #darkhumor #physics #newtonslaws #dashandnewt
+  cover_frame_s: 15.6
+  alt_text: 2D cartoon animation. A serious young man in an orange scarf walks a small boy in a party hat down a road like a bodyguard, shielding him from a pigeon and lifting him over a puddle. When a car approaches in its own lane, he yanks the boy toward the kerb so hard that the light boy flies, in slow motion with a chalk trajectory and the formula a = F ÷ m, onto a knife-sharpener's cart beside tomato crates. Only his party hat on the knife and his sneakers are shown; his friendly ghost pats the man's head and gently shows how softly to pull.
+  share_to_feed: true
+facebook:
+  title: Overprotective Friend vs. Newton's 2nd Law 🚗
+  description: |-
+    An overprotective friend “saves” his buddy from a passing car… and Newton's Second Law of Motion (F = ma) does the rest. 🚗💨
+
+    Dash is a dead-serious bodyguard. Pigeon? THREAT. Puddle? HAZARD. A car that's staying in its own lane? THREAT LEVEL: MAXIMUM. 🕶️
+
+    One mighty yank later the car drives past safely… but Newt only weighs 25 kg. Same force + tiny mass = HUGE acceleration (a = F ÷ m). 👻
+
+    🧠 The real physics: the pull that launched Newt at about 4 m/s would only move a 70 kg adult about 1.4 m/s (one step). Pull a friend out of danger firmly… but don't heave.
+
+    Be honest: who's the Dash in your friend group? 👇
+
+    📌 Moral: F = ma. Small friend — gentle pull.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

@@ -1,0 +1,84 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep09-big-bounce
+title: Big Bounce
+status: draft
+video: out/big-bounce.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Never Let Your Big Friend Help on the Seesaw 😇⚰️ | Dash & Newt #Shorts"
+  description: |-
+    Newt's alone on the seesaw. Dash (75 kg) volunteers as the other end. FUN LEVEL 1 → 2 → MAXIMUM. 🎢
+
+    Newt runs tests with apples. Test 1: Dash's lap. Test 2: Dash's head. Then Dash climbs to the top branch… test 3: Newt. 🍎
+
+    🧠 Real physics: a 75 kg drop of 6.5 m launches a 25 kg kid at ~8 m/s, 4 m up and 7.3 m away. Newt calculated exactly where he'd land. He was right.
+
+    Who was the 'heavy friend' on your seesaw? 👇
+
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #seesaw
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - conservation of energy
+    - seesaw physics
+    - energy transfer
+    - funny physics
+    - physics cartoon
+    - dark humor animation
+    - playground fail
+    - 2d animation
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~58.6s in the YouTube app.
+instagram:
+  caption: |-
+    Never Let Your Big Friend Help on the Seesaw 😇⚰️
+
+    Newt's alone on the seesaw. Dash (75 kg) volunteers as the other end. FUN LEVEL 1 → 2 → MAXIMUM. 🎢
+
+    Newt runs tests with apples. Test 1: Dash's lap. Test 2: Dash's head. Then Dash climbs to the top branch… test 3: Newt. 🍎
+
+    🧠 Real physics: a 75 kg drop of 6.5 m launches a 25 kg kid at ~8 m/s, 4 m up and 7.3 m away. Newt calculated exactly where he'd land. He was right.
+
+    Who was the 'heavy friend' on your seesaw? 👇
+
+    Follow for more funny physics cartoons ✨
+  cover_frame_s: 58.6
+  alt_text: null
+  share_to_feed: true
+facebook:
+  title: Never Let Your Big Friend Help on the Seesaw 😇⚰️
+  description: |-
+    Newt's alone on the seesaw. Dash (75 kg) volunteers as the other end. FUN LEVEL 1 → 2 → MAXIMUM. 🎢
+
+    Newt runs tests with apples. Test 1: Dash's lap. Test 2: Dash's head. Then Dash climbs to the top branch… test 3: Newt. 🍎
+
+    🧠 Real physics: a 75 kg drop of 6.5 m launches a 25 kg kid at ~8 m/s, 4 m up and 7.3 m away. Newt calculated exactly where he'd land. He was right.
+
+    Who was the 'heavy friend' on your seesaw? 👇
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

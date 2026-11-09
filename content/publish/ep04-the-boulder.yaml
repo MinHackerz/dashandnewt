@@ -1,0 +1,96 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep04-the-boulder
+title: The Boulder
+status: draft
+video: out/the-boulder.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "How a 30 kg Kid Lifted a 480 kg Boulder 🪨 | Dash & Newt #Shorts"
+  description: |-
+    Dash tried muscle — he pushed it, rammed it and tied himself to it. The 480 kg boulder didn't move an inch. 💪💀
+
+    Newt used a LEVER — a long plank on a small pebble. Long arm × small push = short arm × BIG lift. An 8× longer arm gives 8× more force (plus one tiny bird to tip the balance 🐦).
+
+    Doors, scissors, bottle openers, seesaws… you use levers every day. Now you know why they work (and why muscles are optional). 🧠
+
+    Where did YOU use a lever today? (Hint — scissors, a door, a bottle opener…) 👇
+
+    📌 Moral: Leverage. A long plank beats big muscles.
+
+    Dash & Newt — brute force vs. physics. Funny stickman shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #stickman #funnyanimation #physics #lever
+  tags:
+    - stickman
+    - stickman animation
+    - funny animation
+    - animated shorts
+    - dash and newt
+    - cartoon shorts
+    - lever physics
+    - how a lever works
+    - fulcrum
+    - simple machines
+    - leverage
+    - physics explained
+    - learn physics
+    - science cartoon
+    - archimedes lever
+    - seesaw physics
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~48.6s in the YouTube app.
+instagram:
+  caption: |-
+    How does a 30 kg kid lift a 480 kg rock? 🪨 (physics, explained with stickmen)
+
+    Push: nothing.
+    Ram: nothing.
+    Rope: he became a tetherball. 💀
+
+    Then Newt grabbed a plank and a pebble — a LEVER. Long arm = small push, BIG lift. 8× longer arm → 8× more force 💡
+
+    Quick quiz — name a lever you used today 👇 (scissors? a door? a bottle opener?)
+
+    Tag the friend who fixes everything with force 😂
+    Follow for more funny stickman animations ✨
+
+    📌 Moral: Leverage. A long plank beats big muscles.
+
+    #stickmananimation #physicsexplained #simplemachines #funnyanimation #dashandnewt
+  cover_frame_s: 48.6
+  alt_text: "Funny 2D stickman animation that explains how a lever works. A stickman with an orange scarf tries to move a 480 kg boulder by pushing, ramming and roping it, and fails. A kid in a party hat explains on a chalkboard: pivot, load and effort, and that a long arm times a small push equals a short arm times a big lift. He lifts the rock with a long plank over a pebble, helped by a tiny bird. The stickman launches the ball onto his own head, and they end balancing on a seesaw."
+  share_to_feed: true
+facebook:
+  title: How a 30 kg Kid Lifted a 480 kg Boulder 🪨
+  description: |-
+    Dash tried muscle — he pushed it, rammed it and tied himself to it. The 480 kg boulder didn't move an inch. 💪💀
+
+    Newt used a LEVER — a long plank on a small pebble. Long arm × small push = short arm × BIG lift. An 8× longer arm gives 8× more force (plus one tiny bird to tip the balance 🐦).
+
+    Doors, scissors, bottle openers, seesaws… you use levers every day. Now you know why they work (and why muscles are optional). 🧠
+
+    Where did YOU use a lever today? (Hint — scissors, a door, a bottle opener…) 👇
+
+    📌 Moral: Leverage. A long plank beats big muscles.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new stickman short every week.
+
+    #physics #stickman #dashandnewt
+approval: null
+results: {}

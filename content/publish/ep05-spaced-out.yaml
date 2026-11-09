@@ -1,0 +1,95 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep05-spaced-out
+title: Spaced Out
+status: draft
+video: out/spaced-out.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Stranded in Space — Only One Knew Physics 🚀 | Dash & Newt #Shorts"
+  description: |-
+    Dash maxed the throttle. The rocket burst — in total silence (no air = no sound). Now they're floating between two planets. 🚀💥
+
+    Dash tries to swim. In space. Newt throws a wrench the OTHER way, drifts to an emergency flare and rides it to the green planet. Every push pushes back — that's Newton's 3rd law, and it's how every rocket works.
+
+    Dash throws a sandwich. 🥪 It does not go well.
+
+    Which way would YOU throw the wrench? 👇
+
+    📌 Moral: Every push pushes back.
+
+    Dash & Newt — brute force vs. physics. Funny stickman shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #stickman #funnyanimation #space #physics
+  tags:
+    - stickman
+    - stickman animation
+    - funny animation
+    - animated shorts
+    - dash and newt
+    - cartoon shorts
+    - newtons third law
+    - action and reaction
+    - space physics
+    - how rockets work
+    - conservation of momentum
+    - no sound in space
+    - astronaut cartoon
+    - funny space animation
+    - physics explained
+    - science cartoon
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~17s in the YouTube app.
+instagram:
+  caption: |-
+    Stranded in space with ONE emergency flare 🚀 (only one of them knew physics)
+
+    Dash: swims. In space. 🏊
+    Newt: throws a wrench the other way, grabs the flare, flies home. 🔥
+
+    Every push pushes back — that's how rockets (and wrenches) work 💡
+
+    Be honest — would you have thrown the sandwich? 🥪👇
+
+    Tag the friend who'd try to swim in space 😂
+    Follow for more funny stickman animations ✨
+
+    📌 Moral: Every push pushes back.
+
+    #stickmananimation #spacephysics #newtonslaws #funnyanimation #dashandnewt
+  cover_frame_s: 17
+  alt_text: Funny 2D stickman space animation about Newton's third law. A stickman with an orange scarf maxes a rocket's throttle and it bursts silently in space. He tries to swim and run in space and goes nowhere, while a kid in a party hat throws a wrench the opposite way to drift to an emergency flare, then uses its flame like a rocket to fly to a green planet and land softly. The stickman is hit by a slow meteor that carries him down to a grey airless planet; a little ghost with his orange scarf floats up and waves.
+  share_to_feed: true
+facebook:
+  title: Stranded in Space — Only One Knew Physics 🚀
+  description: |-
+    Dash maxed the throttle. The rocket burst — in total silence (no air = no sound). Now they're floating between two planets. 🚀💥
+
+    Dash tries to swim. In space. Newt throws a wrench the OTHER way, drifts to an emergency flare and rides it to the green planet. Every push pushes back — that's Newton's 3rd law, and it's how every rocket works.
+
+    Dash throws a sandwich. 🥪 It does not go well.
+
+    Which way would YOU throw the wrench? 👇
+
+    📌 Moral: Every push pushes back.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new stickman short every week.
+
+    #space #stickman #dashandnewt
+approval: null
+results: {}

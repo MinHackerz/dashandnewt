@@ -1,0 +1,95 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep06-the-jar
+title: The Jar
+status: draft
+video: out/the-jar.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "This Jar Wouldn't Open… Until Physics 🫙 | Dash & Newt #Shorts"
+  description: |-
+    Dash tried bare hands, his scarf and a pipe wrench. The jar won. 💪💀
+
+    Newt knew the secret — the AIR is pressing the lid down (about 20 kg!). One spoon under the edge, pfft, air gets in… and it opens with two fingers. 🥄
+
+    Try it at home: slide a spoon under the lid edge and lever gently until you hear the pfft. 🧠
+
+    Be honest — how do YOU open a stuck jar? 👇
+
+    📌 Moral: Air pressure. Don't fight the air — let it in.
+
+    Dash & Newt — brute force vs. physics. Funny stickman shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #stickman #funnyanimation #physics #lifehack
+  tags:
+    - stickman
+    - stickman animation
+    - funny animation
+    - animated shorts
+    - dash and newt
+    - cartoon shorts
+    - how to open a stuck jar
+    - jar hack
+    - air pressure
+    - vacuum seal
+    - kitchen hacks
+    - physics explained
+    - learn physics
+    - science cartoon
+    - life hacks
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~30s in the YouTube app.
+instagram:
+  caption: |-
+    Can't open a jar? It's not the lid — it's the AIR 🫙
+
+    Bare hands: nothing.
+    Scarf grip: nothing.
+    Pipe wrench: on the floor. 💀
+
+    Newt slipped a spoon under the lid, pfft, air in, and it opened with two fingers. The air was pushing it down with ~20 kg 💡
+
+    Have you tried the spoon trick? 👇
+
+    Tag the friend who always hands you the jar 😂
+    Follow for more funny stickman animations ✨
+
+    📌 Moral: Air pressure. Don't fight the air — let it in.
+
+    #stickmananimation #physicsexplained #kitchenhacks #funnyanimation #dashandnewt
+  cover_frame_s: 30
+  alt_text: Funny 2D stickman animation about opening a stuck jar. A stickman with an orange scarf twists a pickle jar with bare hands, with his scarf for grip and with a pipe wrench, and falls over. A kid in a party hat shows with chalk arrows that air presses the lid down, slips a teaspoon under the edge so air hisses in, the lid's button pops up, and he opens it with two fingers. The stickman pries a jam jar with a crowbar and the lid lands on his head; they share the pickles.
+  share_to_feed: true
+facebook:
+  title: This Jar Wouldn't Open… Until Physics 🫙
+  description: |-
+    Dash tried bare hands, his scarf and a pipe wrench. The jar won. 💪💀
+
+    Newt knew the secret — the AIR is pressing the lid down (about 20 kg!). One spoon under the edge, pfft, air gets in… and it opens with two fingers. 🥄
+
+    Try it at home: slide a spoon under the lid edge and lever gently until you hear the pfft. 🧠
+
+    Be honest — how do YOU open a stuck jar? 👇
+
+    📌 Moral: Air pressure. Don't fight the air — let it in.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new stickman short every week.
+
+    #physics #stickman #dashandnewt
+approval: null
+results: {}

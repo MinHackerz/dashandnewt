@@ -11,3 +11,5 @@ Config.setRspack(true);
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.setDefaultPremountInSeconds(2);
+// GPU WebGL for the three.js sets (ep06+); without it headless Chrome falls back to software GL
+Config.setChromiumOpenGlRenderer("angle");

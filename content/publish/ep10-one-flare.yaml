@@ -1,0 +1,102 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep10-one-flare
+title: One Flare
+status: draft
+video: out/one-flare.mp4
+platforms:
+  - youtube
+  - instagram
+youtube:
+  title: "They Had ONE Flare… and Dash Had It 🏝️🔥 | Dash & Newt #Shorts"
+  description: |-
+    Their helicopter tour crashes on a mystery island. Dash shouts HELP for five days. Newt quietly builds a 5 m HELP sign out of driftwood. 🪵
+
+    A plane sees the sign, rocks its wings and sends a ship. Rescue is 300 m away. Dash fires their ONE flare up into the sky… and the wind brings it down right on the ship's fuel. 🚢🔥
+
+    🧠 Real physics: a shout loses ~6 dB every time the distance doubles — 100 dB at 1 m is only 40 dB at 1 km, quieter than the waves. A big sign (or a flare fired UP to ~150 m) carries by line of sight. And what goes up on a parachute comes down wherever the wind takes it.
+
+    Shout or build the sign — what would YOU do first? 👇
+
+    📌 Moral: Shouts fade. Signs carry. What goes UP comes DOWN — check the wind.
+
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #stranded
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - inverse square law
+    - parachute flare
+    - wind drift
+    - sound and distance
+    - decibels explained
+    - signal for help
+    - stranded on an island
+    - flare gun fail
+    - projectile motion
+    - funny physics
+    - physics cartoon
+    - 2d animation
+    - animated short
+    - science cartoon
+    - learn physics
+    - survival tips
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Newton Was Right
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~74.5s in the YouTube app.
+instagram:
+  caption: |-
+    They had ONE flare. Dash had the flare gun. 🏝️🔥
+
+    Helicopter tour → storm → mystery island.
+    Dash shouts HELP for 5 days.
+    Newt builds a 5 m HELP sign.
+
+    A plane sees the sign and sends a ship. Dash fires their only flare into the sky… and the wind drops it on the ship. Its cargo: fuel. 🔥🚢
+
+    Physics: sound fades ~6 dB every time the distance doubles. A shout is quieter than the waves 1 km out — a big sign isn't. 🧠
+
+    Shout or sign — what's your first move? 👇
+
+    Tag the friend who'd 100% tilt it “so they can see it” 😂
+    Follow for more funny physics cartoons ✨
+
+    📌 Moral: Shouts fade. Signs carry. What goes UP comes DOWN — check the wind.
+
+    #funnyanimation #physics #survival #cartoonanimation #dashandnewt
+  cover_frame_s: 74.5
+  alt_text: 2D cartoon animation. A serious young man in an orange scarf and a small boy in a party hat crash a self-flying tour helicopter on a question-mark-shaped island in a storm. For five days the man shouts HELP from the beach, a palm tree and a leaf megaphone while chalk notes show his shout fading below the sound of the waves; the boy lays driftwood into giant HELP letters. A seaplane sees the sign, rocks its wings and sends a ship. The man fires their only flare into the sky; it hangs on a parachute and the wind carries it down onto the fuel drums on deck, the ship catches fire, bursts and sinks while the crew row away in a lifeboat. The boy carves "DAY 1" on a palm again and shares a coconut with his friend.
+  share_to_feed: true
+facebook:
+  title: They Had ONE Flare… and Dash Had It 🏝️🔥
+  description: |-
+    Their helicopter tour crashes on a mystery island. Dash shouts HELP for five days. Newt quietly builds a 5 m HELP sign out of driftwood. 🪵
+
+    A plane sees the sign, rocks its wings and sends a ship. Rescue is 300 m away. Dash fires their ONE flare up into the sky… and the wind brings it down right on the ship's fuel. 🚢🔥
+
+    🧠 Real physics: a shout loses ~6 dB every time the distance doubles — 100 dB at 1 m is only 40 dB at 1 km, quieter than the waves. A big sign (or a flare fired UP to ~150 m) carries by line of sight. And what goes up on a parachute comes down wherever the wind takes it.
+
+    Shout or build the sign — what would YOU do first? 👇
+
+    📌 Moral: Shouts fade. Signs carry. What goes UP comes DOWN — check the wind.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

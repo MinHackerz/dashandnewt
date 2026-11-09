@@ -1,0 +1,85 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep02-five-more-minutes
+title: Five More Minutes
+status: draft
+video: out/five-more-minutes.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: '"5 More Minutes"… Turned Into 40 Years 😴⏰ | Dash & Newt #Shorts'
+  description: |-
+    Dash hit snooze for 5 more minutes. Then 1 day passed. Then 8 years. Then 40. 💀
+
+    Newt grew up waiting — and still came back to take his hand. 🥹
+
+    How many times did you snooze today? 👇
+
+    📌 Moral: Don't hit snooze on the people you love.
+
+    Dash & Newt — brute force vs. physics. Funny stickman shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #stickman #funnyanimation #snooze #relatable
+  tags:
+    - stickman
+    - stickman animation
+    - funny animation
+    - animated shorts
+    - dash and newt
+    - cartoon shorts
+    - snooze button
+    - five more minutes
+    - alarm clock
+    - relatable
+    - time skip
+    - funny cartoon
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~18.7s in the YouTube app.
+instagram:
+  caption: |-
+    POV: you hit snooze "just 5 more minutes" ⏰😴 (wait for it…)
+
+    5 minutes became 1 day. Then 8 years. Then 40. 💀
+
+    A funny stickman animation about the snooze button stealing your whole life — and the one person who still waits for you 🥹
+
+    Be honest — how many times did you snooze today? 👇
+
+    Tag the friend who snoozes 10 alarms ⏰
+    Follow for more funny stickman animations ✨
+
+    📌 Moral: Don't hit snooze on the people you love.
+
+    #stickmananimation #funnyanimation #snoozebutton #relatable #dashandnewt
+  cover_frame_s: 18.7
+  alt_text: "Funny 2D stickman animation: a stickman with an orange scarf keeps hitting snooze, and every snooze jumps his life forward — one day, eight years, forty years — while a kid grows up waiting. Old and bearded, he chases the runaway alarm clock until a tiny kid in a party hat takes his hand and they walk out into the sunlight."
+  share_to_feed: true
+facebook:
+  title: '"5 More Minutes"… Turned Into 40 Years 😴⏰'
+  description: |-
+    Dash hit snooze for 5 more minutes. Then 1 day passed. Then 8 years. Then 40. 💀
+
+    Newt grew up waiting — and still came back to take his hand. 🥹
+
+    How many times did you snooze today? 👇
+
+    📌 Moral: Don't hit snooze on the people you love.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new stickman short every week.
+
+    #snooze #stickman #dashandnewt
+approval: null
+results: {}

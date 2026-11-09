@@ -1,0 +1,37 @@
+# Channel-wide defaults for `npm run publish:prepare` (tools/publish).
+# Episode-specific copy lives in each episode sheet's "Publish brief" block
+# (content/episodes/epNN-slug.md); the generated, reviewable result goes to content/publish/epNN-slug.yaml.
+brand: Dash & Newt
+
+youtube:
+  title_suffix: " | Dash & Newt #Shorts"
+  footer: |-
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+  # Description hashtags: these first, then the episode's `hashtags`, max 5 in total
+  # (YouTube shows the first three above the title).
+  hashtags: [shorts, funnyanimation, cartoon]
+  # Tags: these + the episode's `keywords`, trimmed to YouTube's 500-character budget.
+  tags: [dash and newt, funny animation, animated shorts, cartoon shorts, cartoon animation]
+  category: Comedy
+  language: en
+  privacy: public
+  # Audience ("made for kids", COPPA) is your decision — see content/channel/youtube-channel.md.
+  # General-audience comedy → false. If you change it, regenerate the drafts.
+  made_for_kids: false
+  # Stylised cartoons, not realistic people/places/events → not "altered or synthetic" content.
+  synthetic_media: false
+  # Brief keys → exact playlist titles on the channel (create them in YouTube Studio first).
+  playlists:
+    all: Dash & Newt — All Episodes
+    newton: Newton Was Right
+    worst-ideas: Dash's Worst Ideas
+
+instagram:
+  follow: Follow for more funny physics cartoons ✨
+  share_to_feed: true
+
+facebook:
+  footer: Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+  # FB style: few hashtags. Episode's first `hashtags` entry + these, max 3.
+  hashtags: [funnyanimation, dashandnewt]
