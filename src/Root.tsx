@@ -8,6 +8,7 @@ import { DURATION as BOUNCE_DURATION } from "./episodes/ep09-big-bounce/timeline
 import { OneFlare } from "./episodes/ep10-one-flare/OneFlare";
 import { DURATION as FLARE_DURATION } from "./episodes/ep10-one-flare/timeline";
 import { CastSheet } from "./rig2d/CastSheet";
+import { CastSheet3D, LookBeach, LookPark, LookStreet } from "./world3d/LookSheet";
 import { ChannelAvatar, ChannelBanner, ChannelBannerSafeArea } from "./channel/ChannelArt";
 import { TheButton } from "./episodes/ep01-the-button/TheButton";
 import { FiveMoreMinutes } from "./episodes/ep02-five-more-minutes/FiveMoreMinutes";
@@ -102,6 +103,12 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
       />
+      <Folder name="Look3D">
+        <Still id="CastSheet3D" component={CastSheet3D} width={1080} height={1920} />
+        <Still id="LookBeach" component={LookBeach} width={1080} height={1920} />
+        <Still id="LookPark" component={LookPark} width={1080} height={1920} />
+        <Still id="LookStreet" component={LookStreet} width={1080} height={1920} />
+      </Folder>
       <Folder name="Rig2D">
         <Still id="CastSheet" component={CastSheet} width={1080} height={1920} />
       </Folder>

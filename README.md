@@ -22,7 +22,7 @@ Characters: [docs/CAST.md](docs/CAST.md) · How to make an episode: [docs/PLAYBO
 | 09 | [Big Bounce](content/episodes/ep09-big-bounce.md) | `BigBounce` | 2D cartoon | Energy is conserved. Kids are not. |
 | 10 | [One Flare](content/episodes/ep10-one-flare.md) | `OneFlare` | 2D cartoon | Shouts fade. Signs carry. |
 
-New episodes use the **2D cartoon look** (from ep07 on): copy ep07's `Lane`/`Layer` pattern.
+New episodes (ep11 on) use the **3D cartoon look**: `Toon3D` characters on a `Stage3D` set (`src/world3d/`). See the `Look3D` stills in the Studio.
 
 ## Quick start
 
@@ -56,7 +56,8 @@ src/
   Root.tsx                     # registers every episode composition
   rig/                         # shared character state: joints, faces, poses, gaits, Script/build
   rig2d/                       # Dash & Newt as 2D cartoon characters (Toon, IK, depth lanes, CastSheet)
-  rig3d/                       # the same rig in three.js (ep06)
+  rig3d/                       # 3D characters: Toon3D (house look, ep11+), Stickman3D (ep06)
+  world3d/                     # 3D stage: camera, sky, lights, depth of field + beach/park/street sets
   lib/                         # keyframes (kf.ts), readability helpers, 3D post-processing
   shared/                      # house font/UI, chalk "physics look" overlay, moral card
   channel/                     # channel avatar + banner stills

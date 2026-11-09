@@ -1,7 +1,7 @@
 # Production playbook
 
 How an episode goes from idea to a published reel. Format: **vertical 1080×1920,
-30 fps, 30–45 s**, hand-drawn stickman look, every action with a sound.
+30 fps, 30–45 s**, 3D cartoon look (chunky Dash & Newt in a bright 3D world), every action with a sound.
 
 ## 1. Story (before any code)
 
@@ -47,6 +47,24 @@ src/episodes/epNN-slug/
   props.tsx     # episode-specific set pieces
   Episode.tsx   # world, camera, overlays, end card, <Audio> cues (one named node per cue)
 ```
+
+**Look (ep11 on): 3D.** The picture is one `<Stage3D>` (`src/world3d/Stage3D.tsx`) with the cast and props inside:
+
+```tsx
+<Stage3D cam={{ x: 540, y: 1120, zoom: 2, yaw: -8, pitch: -3, fov: 42, dof: 18 }} set="beach">
+  <Toon3D who="newt" c={newt} turn={45} />
+  <Toon3D who="dash" c={dash} turn={45} />
+  {/* episode props: three.js meshes on the action plane (z = 0), metres = px / 240 */}
+</Stage3D>
+```
+
+- **Sets:** `beach`, `park`, `street`, `studio`. A new place is a new set in `src/world3d/sets.tsx` built from
+  `kit.tsx` (ground, clouds, palms, round trees, bushes, rocks, buildings, lamp posts). Procedural and seeded only.
+- **Camera:** `cam.x / cam.y` are the usual world px, so timelines and physics don't change. Frame faces big
+  (zoom 1.8–2.4 for two-shots), low hero angles (`pitch` −3 to −8), background blur `dof` 14–20.
+- **Colour:** saturated sky blue, warm ground, the cast's blue / green / orange / red pop against it. No ink outlines.
+- **Overlays** (chalk "physics look", hook title, moral card) stay 2D on top of the stage.
+- Stills and renders of 3D need `--gl=angle`.
 
 Register it in `src/Root.tsx` (1080×1920, 30 fps).
 

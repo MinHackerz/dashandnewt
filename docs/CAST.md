@@ -7,9 +7,23 @@ is who **from the silhouette alone**, so these identity rules never change.
 *brute force vs. physics*: the Hero ignores how the world works and pays for it; the Kid
 understands it and wins — then is kind about it.
 
-## Look (from ep07): 2D cartoon characters
+## Look (from ep11): 3D cartoon characters in a 3D world
 
-Drawn by `src/rig2d/Toon.tsx`; check `CastSheet` in the Studio. The colours are part of the identity:
+**This is the house look for every new episode.** Chunky, big-headed, soft-lit 3D characters in a bright,
+saturated 3D world with a blurred background — like a modern animated feature, no ink outlines.
+Characters: `src/rig3d/Toon3D.tsx`. World, light and camera: `src/world3d/` (`Stage3D`, sets `beach` / `park` /
+`street` / `studio`). Check the `CastSheet3D`, `LookBeach`, `LookPark` and `LookStreet` stills in the Studio
+(folder *Look3D*) after touching any of them.
+
+- **Dash:** royal-blue tee, dark navy jeans, chunky white sneakers with a dark sole and orange stripe, spiky brown hair, big brown eyes, thick brows, and the orange scarf (ring, knot and a short end on the chest).
+- **Newt:** much bigger head for his body, grass-green tee with a red apple (Newton's), olive shorts, white socks, red sneakers with white soles, brown fringe, the striped party hat + pink cheeks.
+- **Ghost Newt:** `extras.ghost` gives a see-through white figure with a glowing halo.
+- **Proportions:** head ≈ a quarter of Dash's height and a third of Newt's; big hands and shoes. Faces carry the shot: frame them large.
+- **Turn:** `<Toon3D turn={35}>` swings the body toward the camera (3/4 view). Use 40–50 for hero poses, 0–15 for fast side-on action.
+
+## Earlier look (ep07–ep10): 2D cartoon characters
+
+Drawn by `src/rig2d/Toon.tsx`; check `CastSheet` in the Studio. Same identity colours:
 - **Dash:** blue tee, dark jeans, white sneakers with orange trim, spiky brown hair, and the orange scarf (a ring plus a knot end on his chest).
 - **Newt:** green tee with a red apple (Newton's), khaki shorts, red sneakers, and the party hat + blush.
 - **Ghost Newt:** `extras.ghost` gives a see-through white figure with a halo.

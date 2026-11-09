@@ -17,9 +17,9 @@ type P2 = { x: number; y: number };
 const v3 = (p: P2, z: number) => new THREE.Vector3(p.x / PX_PER_M, (GROUND - p.y) / PX_PER_M, z);
 
 // ─── Materials (soft vinyl / clay, lit by the scene) ─────────────────────
-const phys = (color: string, roughness: number, clearcoat = 0, extra: Partial<THREE.MeshPhysicalMaterialParameters> = {}) =>
+export const phys = (color: string, roughness: number, clearcoat = 0, extra: Partial<THREE.MeshPhysicalMaterialParameters> = {}) =>
   new THREE.MeshPhysicalMaterial({ color, roughness, clearcoat, clearcoatRoughness: 0.35, ...extra });
-const M = {
+export const M = {
   body: phys("#2d2f37", 0.48, 0.25),
   glove: phys("#f8f4ec", 0.42, 0.3),
   shoe: phys("#f4f1ea", 0.55, 0.1),
@@ -70,9 +70,9 @@ const knitTex = (base: string, line: string) => {
   t.repeat.set(4, 1);
   return t;
 };
-const SCARF = phys("#ffffff", 0.92, 0, { map: knitTex("#ff8a1f", "#e06d0c") });
-const SCARF_WET = phys("#ffffff", 0.4, 0.5, { map: knitTex("#c8641a", "#9a4a10") });
-const HAT = (() => {
+export const SCARF = phys("#ffffff", 0.92, 0, { map: knitTex("#ff8a1f", "#e06d0c") });
+export const SCARF_WET = phys("#ffffff", 0.4, 0.5, { map: knitTex("#c8641a", "#9a4a10") });
+export const HAT = (() => {
   const c = document.createElement("canvas");
   c.width = 64;
   c.height = 256;
@@ -88,9 +88,9 @@ const HAT = (() => {
 })();
 
 // ─── Geometry helpers ────────────────────────────────────────────────────
-const SPH = new THREE.SphereGeometry(1, 40, 28);
-const CONE = new THREE.ConeGeometry(1, 1, 40, 1, true);
-const RING = new THREE.TorusGeometry(1, 0.42, 18, 40);
+export const SPH = new THREE.SphereGeometry(1, 40, 28);
+export const CONE = new THREE.ConeGeometry(1, 1, 40, 1, true);
+export const RING = new THREE.TorusGeometry(1, 0.42, 18, 40);
 const TORUS = new THREE.TorusGeometry(1, 0.32, 12, 28);
 const taperCache = new Map<number, THREE.CylinderGeometry>();
 /** Unit-height cylinder whose top radius is `k` × its bottom radius (1) */
@@ -107,7 +107,7 @@ const Y = new THREE.Vector3(0, 1, 0);
 const Z = new THREE.Vector3(0, 0, 1);
 
 /** A limb segment from a (radius ra) to b (radius rb), with a ball at each end so joints are smooth */
-const Seg: React.FC<{ a: THREE.Vector3; b: THREE.Vector3; ra: number; rb: number; mat: THREE.Material }> = ({ a, b, ra, rb, mat }) => {
+export const Seg: React.FC<{ a: THREE.Vector3; b: THREE.Vector3; ra: number; rb: number; mat: THREE.Material }> = ({ a, b, ra, rb, mat }) => {
   const d = new THREE.Vector3().subVectors(b, a);
   const len = Math.max(1e-4, d.length());
   const q = new THREE.Quaternion().setFromUnitVectors(Y, d.normalize());
@@ -122,13 +122,13 @@ const Seg: React.FC<{ a: THREE.Vector3; b: THREE.Vector3; ra: number; rb: number
 };
 
 /** An ellipsoid at p, its local z axis turned to `dir` */
-const Blob: React.FC<{ p: THREE.Vector3; s: [number, number, number]; mat: THREE.Material; dir?: THREE.Vector3 }> = ({ p, s, mat, dir }) => {
+export const Blob: React.FC<{ p: THREE.Vector3; s: [number, number, number]; mat: THREE.Material; dir?: THREE.Vector3 }> = ({ p, s, mat, dir }) => {
   const q = dir ? new THREE.Quaternion().setFromUnitVectors(Z, dir.clone().normalize()) : new THREE.Quaternion();
   return <mesh geometry={SPH} material={mat} position={p} quaternion={q} scale={s} castShadow />;
 };
 
 /** A smooth tube along points (face lines, scarf tails), rebuilt only when the points change */
-const Line3: React.FC<{ pts: THREE.Vector3[]; r: number; mat: THREE.Material; cast?: boolean }> = ({ pts, r, mat, cast = false }) => {
+export const Line3: React.FC<{ pts: THREE.Vector3[]; r: number; mat: THREE.Material; cast?: boolean }> = ({ pts, r, mat, cast = false }) => {
   const key = pts.map((p) => `${p.x.toFixed(4)},${p.y.toFixed(4)},${p.z.toFixed(4)}`).join(";") + r.toFixed(5);
   const geo = useMemo(() => new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), Math.max(8, pts.length * 6), r, 10, false), [key]); // eslint-disable-line react-hooks/exhaustive-deps
   React.useEffect(() => () => geo.dispose(), [geo]);
