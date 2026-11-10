@@ -8,6 +8,8 @@ import { DURATION as BOUNCE_DURATION } from "./episodes/ep09-big-bounce/timeline
 import { OneFlare } from "./episodes/ep10-one-flare/OneFlare";
 import { DURATION as FLARE_DURATION } from "./episodes/ep10-one-flare/timeline";
 import { WrongDoor } from "./episodes/ep11-wrong-door/WrongDoor";
+import { RightThere } from "./episodes/ep12-right-there/RightThere";
+import { DURATION as POOL_DURATION } from "./episodes/ep12-right-there/timeline";
 import { DURATION as DOOR_DURATION } from "./episodes/ep11-wrong-door/timeline";
 import { CastSheet } from "./rig2d/CastSheet";
 import { CastSheet3D, LookBeach, LookPark, LookStreet } from "./world3d/LookSheet";
@@ -109,6 +111,14 @@ export const RemotionRoot: React.FC = () => {
         id="WrongDoor"
         component={WrongDoor}
         durationInFrames={Math.round(DOOR_DURATION * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RightThere"
+        component={RightThere}
+        durationInFrames={Math.round(POOL_DURATION * 30)}
         fps={30}
         width={1080}
         height={1920}

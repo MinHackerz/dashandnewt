@@ -63,10 +63,22 @@ src/episodes/epNN-slug/
 - **Camera:** `cam.x / cam.y` are the usual world px, so timelines and physics don't change. Frame faces big
   (zoom 1.8–2.4 for two-shots), low hero angles (`pitch` −3 to −8), background blur `dof` 14–20.
 - **Colour:** saturated sky blue, warm ground, the cast's blue / green / orange / red pop against it. No ink outlines.
-- **Camera never rests** (user, 2026-11-10: motion like fast 3D explainer shorts, to hold viewers). Write a shot
-  list like ep11's `camera.ts`: a new shot every 1–2 s (wide → close-up → insert), a snap zoom on every hit,
-  tracking moves that follow runs and falls, a slow push-in or orbit through every hold, shake + roll on
-  impacts. Derive the cut times from `timeline.ts`. Keep faces and the story prop readable in every shot.
+- **Camera keeps moving, but the viewer must be able to follow** (user, 2026-11-10: first "add motion to hold
+  viewers", then "too fast to understand"). Write a shot list like ep12's `camera.ts`: open each place with a
+  wide shot, then cut in; about one shot every 2–3 s (~20–25 per reel, not 40); keep each gag in ONE shot long
+  enough to read (≥1.5 s; e.g. the stick going in AND out in the same frame); move inside a shot with slow
+  push-ins and orbits rather than cutting; snap zooms and shake only on real hits. Motions stay at real speed;
+  it's the holds between beats that give the joke time to land. Derive cut times from `timeline.ts`.
+- **Plain words, always** (user, 2026-11-10: "understandable in the most layman's terms"). Every reel must be
+  clear to someone who knows no physics, with the sound off:
+  - **Say the goal:** a lower-third `Caption` in the hook ("A coin! At the bottom of the pool.") and a
+    `Stamp` for every attempt that names the plan ("PLAN #1: GRAB IT", "NEWT'S PLAN: GUM + STICK").
+  - **Say what just happened:** one short, funny caption per gag ("Arm: totally fine.", "Missed the coin.
+    Hit the crab.").
+  - **Explain the physics in everyday words:** the chalkboard has no jargon ("Water BENDS light", not
+    "refraction"/"Snell"), ties every gag to the one cause, and ends with the trick. Chalk labels read
+    "where it LOOKS" / "where it REALLY is", not symbols.
+  - **Moral card:** two short everyday sentences.
 - **Lanes:** wrap a `Toon3D` in `<group position={[0, 0, z]}>` to move it toward or away from the camera; keep
   the cast out of each other's sight lines to the story prop.
 - **Overlays** (chalk "physics look", hook title, moral card) stay 2D on top of the stage; place chalk on 3D

@@ -17,6 +17,25 @@ export const SKIES: Record<SetName, SkyLook> = {
 
 const X0 = 2.25;
 
+/** A rectangular hole in the ground (metres), e.g. for a rock pool sunk into the sand */
+export type Hole = { x0: number; x1: number; z0: number; z1: number };
+export type SetProps = { x0?: number; hole?: Hole };
+
+/** Ground from z0 back to z1, leaving `hole` open */
+const HoledGround: React.FC<{ x0: number; z0: number; z1: number; w?: number; mat: THREE.Material; tile: number; hole?: Hole }> = ({ x0, z0, z1, w = 160, mat, tile, hole }) => {
+  if (!hole) return <Ground x0={x0} z0={z0} z1={z1} w={w} mat={mat} tile={tile} />;
+  const L = x0 - w / 2;
+  const R = x0 + w / 2;
+  return (
+    <group>
+      <Ground x0={x0} z0={z0} z1={hole.z1} w={w} mat={mat} tile={tile} />
+      <Ground x0={x0} z0={hole.z0} z1={z1} w={w} mat={mat} tile={tile} />
+      <Ground x0={(L + hole.x0) / 2} z0={hole.z1} z1={hole.z0} w={hole.x0 - L} mat={mat} tile={tile} />
+      <Ground x0={(hole.x1 + R) / 2} z0={hole.z1} z1={hole.z0} w={R - hole.x1} mat={mat} tile={tile} />
+    </group>
+  );
+};
+
 const SkyClouds: React.FC<{ x0: number; seed: number }> = ({ x0, seed }) => (
   <group>
     <Cloud at={[x0 - 16, 13, -70]} size={6} seed={seed} />
@@ -69,11 +88,11 @@ const seaMat = () =>
     fog: false,
   });
 
-export const BeachSet: React.FC<{ x0?: number }> = ({ x0 = X0 }) => {
+export const BeachSet: React.FC<SetProps> = ({ x0 = X0, hole }) => {
   const sea = useMemo(seaMat, []);
   return (
     <group>
-      <Ground x0={x0} z0={30} z1={-6.6} mat={SAND} tile={3} />
+      <HoledGround x0={x0} z0={30} z1={-6.6} mat={SAND} tile={3} hole={hole} />
       <Ground x0={x0} z0={-6.4} z1={-7.6} mat={WET_SAND} y={0.002} tile={3} />
       <mesh material={sea} position={[x0, 0.01, -7.2 - 150]} rotation={[-Math.PI / 2, 0, 0]}>
         <planeGeometry args={[400, 300]} />
@@ -176,4 +195,4 @@ export const StudioSet: React.FC<{ x0?: number }> = ({ x0 = X0 }) => (
   </group>
 );
 
-export const SETS: Record<SetName, React.FC<{ x0?: number }>> = { beach: BeachSet, park: ParkSet, street: StreetSet, studio: StudioSet };
+export const SETS: Record<SetName, React.FC<SetProps>> = { beach: BeachSet, park: ParkSet, street: StreetSet, studio: StudioSet };

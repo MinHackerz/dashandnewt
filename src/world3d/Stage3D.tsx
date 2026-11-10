@@ -11,7 +11,7 @@ import { LensBlur } from "../lib/look3d/lensblur";
 import { NOINK } from "../lib/look3d/ink";
 import { GROUND } from "../rig/Stickman";
 import { PX_PER_M } from "../rig3d/Stickman3D";
-import { SETS, SKIES, type SetName } from "./sets";
+import { SETS, SKIES, type SetName, type SetProps } from "./sets";
 
 // The 3D stage every episode from ep11 renders on: one <ThreeCanvas> with the camera, a bright
 // saturated sky, sun + sky-fill + rim lighting with soft shadows, a ready-made set, and the post chain
@@ -84,11 +84,14 @@ export type StageProps = {
   /** set centre in world px (default 540: the middle of the frame) */
   setX?: number;
   light?: "day" | "golden";
+  /** extra props for the set (e.g. a `hole` in the ground for a pool) */
+  setProps?: Omit<SetProps, "x0">;
   children?: React.ReactNode;
 };
 
-const Rig: React.FC<StageProps> = ({ cam, set, setX = 540, light = "day", children }) => {
+const Rig: React.FC<StageProps> = ({ cam, set, setX = 540, light = "day", setProps, children }) => {
   const { camera, scene, gl, size } = useThree();
+  gl.localClippingEnabled = true; // water (world3d/water.tsx) splits bodies at the surface
   const pc = camera as THREE.PerspectiveCamera;
   pc.layers.enable(NOINK); // the cast lives on the NOINK layer (shared with the inked ep06 look)
   const { D, target } = applyCam(cam, pc, size.width, size.height);
@@ -158,7 +161,7 @@ const Rig: React.FC<StageProps> = ({ cam, set, setX = 540, light = "day", childr
       <directionalLight position={[target.x + 5, 6, -8]} intensity={1.5} color={golden ? "#ffd0a0" : "#eaf4ff"} />
       {/* soft fill from the camera side so faces never go muddy */}
       <directionalLight position={[target.x + 3, 2.5, 8]} intensity={0.4} color="#fff6ea" />
-      <Set x0={setX / PX_PER_M} />
+      <Set x0={setX / PX_PER_M} {...setProps} />
       {children}
       {post}
     </>

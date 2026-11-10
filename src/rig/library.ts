@@ -182,6 +182,15 @@ export const POSES = {
   doorPush: P({ lean: 8, head: 4, aS: 84, aE: 8, bS: -14, bE: -8, aH: 14, aK: 8, bH: -14, bK: 4 }), // one flat hand on the door
   doorSplat: P({ lean: 3, head: -14, aS: 158, aE: 6, bS: 150, bE: 8, aH: 4, aK: 2, bH: -4, bK: 2 }), // flat against it, arms up
   lieThumb: P({ aS: 92, aE: 0, bS: -4, bE: -4, aH: 4, aK: 2, bH: -4, bK: 2 }), // flat on his back, one arm straight up
+  // it's right there (ep12): a rock pool
+  kneelPeer: P({ lean: 42, head: 34, aS: 30, aE: 30, bS: 10, bE: 40, aH: 2, aK: 90, bH: 0, bK: 90 }), // kneeling at the edge, peering in
+  kneelLook: P({ lean: 4, head: 16, aS: 52, aE: 112, bS: -10, bE: -8, aH: 2, aK: 90, bH: 0, bK: 90 }), // inspecting his own arm
+  kneelHorror: P({ lean: -16, head: -6, aS: 40, aE: 100, bS: -60, bE: -30, aH: 2, aK: 90, bH: 0, bK: 90 }), // arm yanked out, recoiling
+  spear: P({ lean: 30, head: 26, aS: 60, aE: 20, bS: -50, bE: 40, aH: 46, aK: 66, bH: -16, bK: 46 }), // crouched spear-fisher, front arm on the stick (IK)
+  wade: P({ lean: 10, head: 30, aS: 74, aE: 56, bS: 64, bE: 62, aH: 6, aK: 10, bH: -6, bK: 10 }), // arms up out of the water, looking down
+  toeGrab: P({ lean: 26, head: 26, aS: 40, aE: 30, bS: 30, bE: 40, aH: 50, aK: 120, bH: -6, bK: 4 }), // hopping, clutching a foot
+  flipOver: P({ lean: -6, head: -10, aS: 168, aE: 70, bS: -14, bE: -10 }), // tossing a coin back over his shoulder
+  wishEyes: P({ lean: -2, head: -8, aS: 58, aE: 128, bS: -12, bE: -8 }), // coin held to his lips
   // one flare (ep10): castaways
   shoutCup: P({ lean: -10, head: -8, aS: 104, aE: 122, bS: 92, bE: 128, aH: 12, aK: 4, bH: -14, bK: 6 }),
   megaphone: P({ lean: -8, head: -6, aS: 92, aE: 96, bS: 70, bE: 84, aH: 14, aK: 6, bH: -14, bK: 6 }),

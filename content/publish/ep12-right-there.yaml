@@ -1,0 +1,106 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep12-right-there
+title: It's RIGHT There
+status: draft
+video: out/right-there.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "The Coin Is RIGHT There… or Is It? 🪙 | Dash & Newt #Shorts"
+  description: |-
+    A gold coin at the bottom of a rock pool. Dash reaches for it… and his arm looks like it SNAPS at the water. 😱
+
+    The stick bends. His jab misses. His legs shrink. And the crab has had ENOUGH. 🦀
+
+    Newt knows why: light bends when it leaves water (refraction), so things under water look shallower than they are. Look straight down, reach deeper. 🧠
+
+    Real numbers: the coin was 44 cm deep, but from where Dash lay it looked 31 cm. Water's refractive index is 1.33.
+
+    Have you ever missed something in a pool because it looked closer? 👇
+
+    📌 Moral: Light bends at the water. It's deeper than it looks.
+
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #refraction
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - refraction
+    - refraction of light
+    - snell's law
+    - why things look shallower in water
+    - bent pencil in water
+    - light bending
+    - physics explained
+    - funny physics
+    - physics cartoon
+    - 3d animation
+    - animated short
+    - science cartoon
+    - learn physics
+    - physics shorts
+    - optical illusion
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - light
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~3.6s in the YouTube app.
+instagram:
+  caption: |-
+    The coin is RIGHT there… right? 🪙😂
+
+    Reach? His arm "snaps". 😱
+    Stick? It "bends".
+    Wade in? His legs "shrink"… and the crab pinches. 🦀
+
+    Light bends at the water (refraction), so things look shallower than they are. Newt looks straight down and reaches deeper. 🧠
+
+    Then Dash makes a wish… and throws it right back in. 😅
+
+    Who's the Dash in your friend group? 👇
+
+    Tag the friend who'd 100% throw it back in 😂
+    Follow for more funny physics cartoons ✨
+
+    📌 Moral: Light bends at the water. It's deeper than it looks.
+
+    #funnyanimation #physics #refraction #3danimation #dashandnewt
+  cover_frame_s: 3.6
+  alt_text: 3D cartoon animation at a beach. A young man in an orange scarf lies at a rock pool and reaches for a gold coin on the bottom; his arm looks bent where it enters the water and he grabs only water. A stick looks bent too, and his jab misses the coin and bonks a crab. He wades in, his legs look short, and the crab pinches his toe so he leaps out onto his back. A small boy in a party hat shows in chalk how light bends at the surface, so the coin looks shallower than it is, then sticks his bubble gum on the stick, holds it straight down and lifts the coin out. The man makes a wish and flips the coin back into the pool.
+  share_to_feed: true
+facebook:
+  title: The Coin Is RIGHT There… or Is It? 🪙
+  description: |-
+    A gold coin at the bottom of a rock pool. Dash reaches for it… and his arm looks like it SNAPS at the water. 😱
+
+    The stick bends. His jab misses. His legs shrink. And the crab has had ENOUGH. 🦀
+
+    Newt knows why: light bends when it leaves water (refraction), so things under water look shallower than they are. Look straight down, reach deeper. 🧠
+
+    Real numbers: the coin was 44 cm deep, but from where Dash lay it looked 31 cm. Water's refractive index is 1.33.
+
+    Have you ever missed something in a pool because it looked closer? 👇
+
+    📌 Moral: Light bends at the water. It's deeper than it looks.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

@@ -12,7 +12,7 @@ import { Blob, HAT, Line3, PX_PER_M, RING, SCARF, SCARF_WET, Seg, SPH, phys } fr
 //
 // `turn` swings the body toward the camera (deg) around the hips: ~35 reads as a 3/4 hero view and is
 // the default; 0 is a pure side view (fast walks, pushes, anything where the stride must stay in-plane).
-// Supported extras: scarf (+ tails, wet), partyHat, blush, flush, ghost. Add others here when an episode needs them.
+// Supported extras: scarf (+ tails, wet), partyHat, blush, flush, ghost, bubble (gum). Add others here when an episode needs them.
 
 export type Who3D = "dash" | "newt";
 
@@ -70,6 +70,7 @@ const SHARED = {
   apple: phys("#e32b2b", 0.45, 0.4),
   leaf: phys("#2f8a2f", 0.6),
   pompom: phys("#ffd23f", 0.95, 0, { sheen: 1, sheenColor: new THREE.Color("#fff3b0") }),
+  gum: phys("#ff8fc8", 0.25, 0.6, { transparent: true, opacity: 0.88 }),
 };
 type Mats = Record<"skin" | "shirt" | "pants" | "sock" | "shoe" | "sole" | "trim" | "hair" | "iris", THREE.Material>;
 const matCache = new Map<string, Mats>();
@@ -529,6 +530,9 @@ export const Toon3D: React.FC<{ who: Who3D; c: CharState; turn?: number }> = ({ 
               </group>
             ))}
             <Face e={c.expr} R={R} look={L} m={m} lookY={c.lookY} blink={c.blink} t={c.t} blush={ex.blush} ghost={ghost} />
+            {ex.bubble && ex.bubble > 0.02 && !ghost ? (
+              <mesh geometry={SPH} material={SHARED.gum} position={surf(0.02, -0.44).p.multiplyScalar(R).add(V(0, 0, (0.08 + 0.42 * ex.bubble) * R))} scale={(0.07 + 0.42 * ex.bubble) * R} />
+            ) : null}
             <Hair R={R} who={who} mat={m.hair} />
             {ex.partyHat ? (
               <group position={V(-0.05 * R, 0.86 * R, -0.12 * R)} rotation={[-0.12, 0, 0.16]}>

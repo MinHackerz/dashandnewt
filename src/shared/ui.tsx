@@ -58,3 +58,34 @@ export const HookTitle: React.FC<{ text: string; from?: number; to?: number; top
     </AbsoluteFill>
   );
 };
+
+// Plain-language caption over the action (lower third by default): one short line that says what the
+// viewer is looking at, so the joke and the physics land even for someone who's never heard of either.
+export const Caption: React.FC<{ text: string; from: number; to: number; top?: number; color?: string; size?: number }> = ({ text, from, to, top = 1470, color = "#ffffff", size = 70 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
+  if (t < from || t > to) return null;
+  const pop = Math.max(0, ease("back", (t - from) / 0.22));
+  const fade = Math.min(1, (to - t) / 0.2);
+  return (
+    <AbsoluteFill style={{ alignItems: "center", paddingTop: top, pointerEvents: "none" }}>
+      <div
+        style={{
+          fontFamily: FONT_STACK,
+          fontSize: size,
+          color,
+          WebkitTextStroke: "14px #1b1b1b",
+          paintOrder: "stroke fill",
+          textAlign: "center",
+          padding: "0 70px",
+          lineHeight: 1.12,
+          scale: String(pop),
+          opacity: fade,
+        }}
+      >
+        {text}
+      </div>
+    </AbsoluteFill>
+  );
+};
