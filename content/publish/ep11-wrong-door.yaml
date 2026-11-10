@@ -1,0 +1,106 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep11-wrong-door
+title: Wrong Door
+status: draft
+video: out/wrong-door.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "He Pushed the WRONG Side of the Door 🚪 | Dash & Newt #Shorts"
+  description: |-
+    It says PUSH. So Dash pushes… right next to the hinge. One hand. Two hands. A full run-up. The door does not care. 🚪
+
+    Then Newt opens it with ONE finger. Same door. The trick is torque: turning force = push × distance from the hinge. 🧠
+
+    Dash: 520 N × 0.08 m = 41.6 N·m (not enough). Newt: 50 N × 1 m = 50 N·m (opens). A tenth of the force, twelve times the distance.
+
+    That's why door handles are on the far edge… and why you should always read the second sign. 😅
+
+    Have you ever pushed a PULL door in front of people? 👇
+
+    📌 Moral: Turning force = push × distance. Push far from the hinge.
+
+    Dash & Newt — brute force vs. physics. Funny cartoon shorts with real physics and zero dialogue.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #torque
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - torque
+    - torque explained
+    - turning force
+    - moment of a force
+    - lever arm
+    - why door handles are on the edge
+    - physics explained
+    - funny physics
+    - physics cartoon
+    - 3d animation
+    - animated short
+    - science cartoon
+    - learn physics
+    - physics shorts
+    - push door fail
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - forces
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~26.3s in the YouTube app.
+instagram:
+  caption: |-
+    He pushed the WRONG side of the door 🚪😂
+
+    One hand? Nope.
+    Two hands? Nope.
+    A full run-up? …ouch. 💫
+
+    Then Newt opens it with ONE finger. Torque = push × distance from the hinge. 🧠
+
+    Physics tip: push far from the hinge. And read the second sign. 😅
+
+    Who's pushed a pull door in public? 👇
+
+    Tag the friend who fights doors 😂
+    Follow for more funny physics cartoons ✨
+
+    📌 Moral: Turning force = push × distance. Push far from the hinge.
+
+    #funnyanimation #physics #torque #3danimation #dashandnewt
+  cover_frame_s: 26.3
+  alt_text: "3D cartoon animation. A confident young man in an orange scarf tries to open an ice-cream shop door marked PUSH by pushing right beside its hinges: with one hand, with both hands, then with a running shoulder charge that bounces him onto his back. A small boy in a party hat studies the door; chalk drawings mark the hinge, a tiny distance and a big distance, with the rule turning force = push × distance. The boy pushes the handle edge with one finger and the door swings open. The man proudly charges with his eyes shut as the self-closing door latches, hits it flat, and falls on his back. The boy opens it again with one finger and they trade a thumbs-up."
+  share_to_feed: true
+facebook:
+  title: He Pushed the WRONG Side of the Door 🚪
+  description: |-
+    It says PUSH. So Dash pushes… right next to the hinge. One hand. Two hands. A full run-up. The door does not care. 🚪
+
+    Then Newt opens it with ONE finger. Same door. The trick is torque: turning force = push × distance from the hinge. 🧠
+
+    Dash: 520 N × 0.08 m = 41.6 N·m (not enough). Newt: 50 N × 1 m = 50 N·m (opens). A tenth of the force, twelve times the distance.
+
+    That's why door handles are on the far edge… and why you should always read the second sign. 😅
+
+    Have you ever pushed a PULL door in front of people? 👇
+
+    📌 Moral: Turning force = push × distance. Push far from the hinge.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

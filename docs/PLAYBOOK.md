@@ -63,7 +63,14 @@ src/episodes/epNN-slug/
 - **Camera:** `cam.x / cam.y` are the usual world px, so timelines and physics don't change. Frame faces big
   (zoom 1.8–2.4 for two-shots), low hero angles (`pitch` −3 to −8), background blur `dof` 14–20.
 - **Colour:** saturated sky blue, warm ground, the cast's blue / green / orange / red pop against it. No ink outlines.
-- **Overlays** (chalk "physics look", hook title, moral card) stay 2D on top of the stage.
+- **Camera never rests** (user, 2026-11-10: motion like fast 3D explainer shorts, to hold viewers). Write a shot
+  list like ep11's `camera.ts`: a new shot every 1–2 s (wide → close-up → insert), a snap zoom on every hit,
+  tracking moves that follow runs and falls, a slow push-in or orbit through every hold, shake + roll on
+  impacts. Derive the cut times from `timeline.ts`. Keep faces and the story prop readable in every shot.
+- **Lanes:** wrap a `Toon3D` in `<group position={[0, 0, z]}>` to move it toward or away from the camera; keep
+  the cast out of each other's sight lines to the story prop.
+- **Overlays** (chalk "physics look", hook title, moral card) stay 2D on top of the stage; place chalk on 3D
+  points with a `project(cam, point)` helper (ep11 `props.tsx`).
 - Stills and renders of 3D need `--gl=angle`.
 
 Register it in `src/Root.tsx` (1080×1920, 30 fps).

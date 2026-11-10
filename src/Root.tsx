@@ -7,6 +7,8 @@ import { BigBounce } from "./episodes/ep09-big-bounce/BigBounce";
 import { DURATION as BOUNCE_DURATION } from "./episodes/ep09-big-bounce/timeline";
 import { OneFlare } from "./episodes/ep10-one-flare/OneFlare";
 import { DURATION as FLARE_DURATION } from "./episodes/ep10-one-flare/timeline";
+import { WrongDoor } from "./episodes/ep11-wrong-door/WrongDoor";
+import { DURATION as DOOR_DURATION } from "./episodes/ep11-wrong-door/timeline";
 import { CastSheet } from "./rig2d/CastSheet";
 import { CastSheet3D, LookBeach, LookPark, LookStreet } from "./world3d/LookSheet";
 import { ChannelAvatar, ChannelBanner, ChannelBannerSafeArea } from "./channel/ChannelArt";
@@ -99,6 +101,14 @@ export const RemotionRoot: React.FC = () => {
         id="OneFlare"
         component={OneFlare}
         durationInFrames={Math.round(FLARE_DURATION * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="WrongDoor"
+        component={WrongDoor}
+        durationInFrames={Math.round(DOOR_DURATION * 30)}
         fps={30}
         width={1080}
         height={1920}

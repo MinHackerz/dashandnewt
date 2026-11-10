@@ -178,6 +178,10 @@ export const POSES = {
   holdHelmet: P({ lean: 8, head: 10, aS: 80, aE: 40, bS: 70, bE: 44 }),
   limp: P({ lean: 0, head: 12, aS: 48, aE: 24, bS: -58, bE: 14, aH: 14, aK: 10, bH: -10, bK: 16 }),
   slump: P({ lean: 16, head: 22, aS: 30, aE: 20, bS: 24, bE: 20, aH: 92, aK: 92, bH: 86, bK: 86 }),
+  // wrong door (ep11): a stiff shop door
+  doorPush: P({ lean: 8, head: 4, aS: 84, aE: 8, bS: -14, bE: -8, aH: 14, aK: 8, bH: -14, bK: 4 }), // one flat hand on the door
+  doorSplat: P({ lean: 3, head: -14, aS: 158, aE: 6, bS: 150, bE: 8, aH: 4, aK: 2, bH: -4, bK: 2 }), // flat against it, arms up
+  lieThumb: P({ aS: 92, aE: 0, bS: -4, bE: -4, aH: 4, aK: 2, bH: -4, bK: 2 }), // flat on his back, one arm straight up
   // one flare (ep10): castaways
   shoutCup: P({ lean: -10, head: -8, aS: 104, aE: 122, bS: 92, bE: 128, aH: 12, aK: 4, bH: -14, bK: 6 }),
   megaphone: P({ lean: -8, head: -6, aS: 92, aE: 96, bS: 70, bE: 84, aH: 14, aK: 6, bH: -14, bK: 6 }),

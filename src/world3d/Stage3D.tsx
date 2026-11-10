@@ -31,6 +31,7 @@ export const H = 1920;
 export type Cam = {
   x: number; // look-at point on the action plane (world px)
   y: number;
+  tz?: number; // look-at depth, m toward the camera (default 0: the action plane)
   zoom: number; // screen px per world px at that point
   yaw?: number; // orbit, deg (+ = camera moves right)
   pitch?: number; // deg (+ = camera above, − = low hero angle)
@@ -45,14 +46,14 @@ export const applyCam = (cam: Cam, pc: THREE.PerspectiveCamera, w = W, h = H) =>
   const fov = cam.fov ?? 38;
   const fpx = H / 2 / Math.tan(rd(fov / 2));
   const D = fpx / (PX_PER_M * cam.zoom);
-  const target = new THREE.Vector3(cam.x / PX_PER_M, (GROUND - cam.y) / PX_PER_M, 0);
+  const target = new THREE.Vector3(cam.x / PX_PER_M, (GROUND - cam.y) / PX_PER_M, cam.tz ?? 0);
   const yaw = rd(cam.yaw ?? 0);
   const pitch = rd(cam.pitch ?? 0);
   pc.fov = fov;
   pc.aspect = w / h;
   pc.near = 0.1;
   pc.far = 500;
-  pc.position.set(target.x + D * Math.sin(yaw) * Math.cos(pitch), Math.max(0.12, target.y + D * Math.sin(pitch)), D * Math.cos(yaw) * Math.cos(pitch));
+  pc.position.set(target.x + D * Math.sin(yaw) * Math.cos(pitch), Math.max(0.12, target.y + D * Math.sin(pitch)), target.z + D * Math.cos(yaw) * Math.cos(pitch));
   pc.up.set(0, 1, 0);
   pc.lookAt(target);
   pc.rotateZ(-rd(cam.roll ?? 0));
