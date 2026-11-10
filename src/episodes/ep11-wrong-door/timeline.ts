@@ -78,16 +78,17 @@ export const LANE = { dashHinge: -0.68, dashMid: -0.25, newtWatch: 1.3, newtEdge
 export const TIMBER_DX = -solve(POSES.lie).hip.y;
 
 // ─── Beats ────────────────────────────────────────────────────────────────
-export const ARRIVE = 2.3;
-export const TRY1 = { hand: 2.5, push: 3.0, give: 4.9 };
-export const TRY2 = { hand: 5.3, push: 5.8, give: 8.4 };
-const T3_RUN = 11.0;
+// Re-paced (user, 2026-11-10: "too fast to follow"): longer holds after every gag; motions keep real speed.
+export const ARRIVE = 2.8;
+export const TRY1 = { hand: 3.0, push: 3.5, give: 5.8 };
+export const TRY2 = { hand: 6.3, push: 6.8, give: 9.6 };
+const T3_RUN = 12.5;
 const T3_HIT = T3_RUN + RUN_UP / RUN_V;
 // the bounce: he leaves the door backwards on a true parabola and lands flat on his back
 export const BOUNCE = { T: 0.5, vx: 330, slide: 1500 };
 export const TRY3 = {
-  back: 8.9,
-  set: 10.3,
+  back: 10.2,
+  set: 11.7,
   run: T3_RUN,
   hit: T3_HIT,
   land: T3_HIT + BOUNCE.T,
@@ -96,22 +97,22 @@ export const TRY3 = {
 export const LAND_X = X3 - BOUNCE.vx * BOUNCE.T;
 export const REST_X = LAND_X - (BOUNCE.vx * BOUNCE.vx) / (2 * BOUNCE.slide);
 
-const LOOK_AT = TRY3.rest + 0.9;
-export const LOOK = { at: LOOK_AT, hinge: LOOK_AT + 0.5, tiny: LOOK_AT + 1.3, big: LOOK_AT + 2.6, note: LOOK_AT + 0.9, end: LOOK_AT + 6.4 };
+const LOOK_AT = TRY3.rest + 1.2;
+export const LOOK = { at: LOOK_AT, hinge: LOOK_AT + 0.6, tiny: LOOK_AT + 1.6, big: LOOK_AT + 3.0, note: LOOK_AT + 1.0, end: LOOK_AT + 7.4 };
 
-const OPEN_PUSH = LOOK.end + 1.2;
-export const OPEN = { walk: LOOK.end - 0.1, finger: LOOK.end + 0.8, push: OPEN_PUSH, opened: OPEN_PUSH + SWING.open, shut: OPEN_PUSH + SWING.open + SWING.close };
+const OPEN_PUSH = LOOK.end + 1.5;
+export const OPEN = { walk: LOOK.end - 0.1, finger: LOOK.end + 1.0, push: OPEN_PUSH, opened: OPEN_PUSH + SWING.open, shut: OPEN_PUSH + SWING.open + SWING.close };
 // Dash gets up, is far too proud to hurry, and charges with his eyes shut: he arrives as it latches
 export const SLAM = OPEN.shut + 0.04;
-export const UP = { head: OPEN.push + 0.5, rise: OPEN.push + 1.5, stand: OPEN.push + 2.1, proud: OPEN.push + 2.5, go: SLAM - (X_SPLAT - REST_X) / RUN_V };
+export const UP = { head: OPEN.push + 0.6, rise: OPEN.push + 1.6, stand: OPEN.push + 2.2, proud: OPEN.push + 2.6, go: SLAM - (X_SPLAT - REST_X) / RUN_V };
 // Newt steps back to his spot after the push, and comes in again for the second one
 export const BACK = { walk: OPEN.push + SWING.push + 0.9, at: OPEN.push + SWING.push + 1.8 };
 // stuck flat on the door for a beat, then he peels off and timbers onto his back
-export const FALL = { at: SLAM + 1.0, land: SLAM + 1.55 };
-export const AGAIN = { palm: SLAM + 0.55, walk: FALL.land + 0.5, finger: FALL.land + 1.3, push: FALL.land + 1.7 };
-export const THUMB = AGAIN.push + 1.3;
-export const END_FADE = THUMB + 1.6;
-export const DURATION = END_FADE + 3.4;
+export const FALL = { at: SLAM + 1.3, land: SLAM + 1.85 };
+export const AGAIN = { palm: SLAM + 0.6, walk: FALL.land + 0.6, finger: FALL.land + 1.5, push: FALL.land + 1.9 };
+export const THUMB = AGAIN.push + 1.4;
+export const END_FADE = THUMB + 1.8;
+export const DURATION = END_FADE + 2.9;
 
 /** Door angle (deg) at time t: flexes when Dash fails, swings when Newt pushes */
 export const doorAt = (t: number) => {

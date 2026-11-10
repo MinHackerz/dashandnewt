@@ -1,13 +1,14 @@
 # Ep 11 — Wrong Door
 
-- **Composition:** `WrongDoor` · 35.6 s · `src/episodes/ep11-wrong-door/`
+- **Composition:** `WrongDoor` · 39.0 s · `src/episodes/ep11-wrong-door/`
 - **Render:** `npm run render -- WrongDoor` → `out/wrong-door.mp4`
 - **Status:** built and rendered, waiting for review.
 - **Look:** first episode in the **3D house look** (user, 2026-11-10): `Toon3D` Dash & Newt on a `Stage3D` street, with the shop built in `props.tsx`. Chalk, stamps and cards are 2D overlays projected through the same camera.
-- **Camera (user, 2026-11-10):** fast and never still, in the style of quick 3D explainer shorts. `camera.ts` is a shot list derived from the timeline: a new shot every 1–2 s (wide → close-up → insert), snap zooms on every hit, tracking moves with the runs, a slow push-in or orbit through every hold, and shake + roll on impacts.
+- **Camera** (re-paced 2026-11-10 after "too fast to follow"): `camera.ts` has 19 shots instead of 32: a wide shot first, each gag held in one shot, slow push-ins and orbits instead of extra cuts. The beats got longer holds; motions stay at real speed.
+- **Plain words:** PLAN stamps name every attempt (PLAN #1: PUSH IT … NEWT'S PLAN: ONE FINGER … PLAN #4: WALK IN PROUDLY); captions say what Dash wants ("Dash wants ice cream. The door says PUSH.") and what just happened ("He's pushing right next to the hinges…", "Door: 1. Dash: 0.", "The door closes by itself. He didn't read that sign."); the chalkboard reads *Doors turn on their hinges. / Push NEAR the hinge: super hard. / Push FAR from the hinge: super easy. / That's why handles are on the far edge!*; chalk labels read "Dash pushed here" / "Newt pushes here".
 - **Acting direction:** everyone plays it **dead serious**. Dash is certain the door is the problem.
 - **Logline:** An ice-cream shop door says PUSH. Dash pushes it right next to the hinge: one hand, two hands, a run-up. It doesn't move. Newt pushes the handle edge with one finger and it swings wide open. Dash, too proud to hurry, charges with his eyes shut and meets the door as its closer latches it.
-- **Moral:** *Turning force = push × distance. / Push far from the hinge.*
+- **Moral:** *Push far from the hinge. / That's why handles are on the edge.*
 - **Everyday situation:** a heavy door that won't open.
 - **Teaches:** how hard a push turns something depends on how far from the pivot you push. That's why door handles are on the far edge.
 - **Physics (one principle):** torque, τ = F × r. Everything is derived in `timeline.ts`:
@@ -23,7 +24,7 @@
 - **The hinges are big and brass** on the far edge; the pull bar is on the edge nearest the camera. The whole width of the door, hinge to handle, is always in view.
 - **Newt watches from the right foreground**, beside the wall, so he never covers the door or Dash.
 
-## Beats (real time)
+## Beats (real time; times are from the first cut — the re-paced version runs ~10% longer per beat, see `timeline.ts`)
 
 | Time | Beat |
 |---|---|
@@ -37,7 +38,7 @@
 | **26.05 s** · SLAM | The latch clicks and Dash arrives. Silence. He is flat on the door, arms up. Newt facepalms. |
 | **27.0–27.6 s** | He peels off and timbers onto his back. Stars. *Womp.* |
 | **28.1–32.2 s** · Heart | Newt walks back in and opens it again with one finger. Dash, still on his back, raises a thumbs-up. Newt returns it. |
-| **32.2–35.6 s** · Moral card | *Turning force = push × distance. / Push far from the hinge.* |
+| **36.1–39.0 s** · Moral card | *Push far from the hinge. / That's why handles are on the edge.* |
 
 ## Sound
 

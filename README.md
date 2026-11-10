@@ -21,7 +21,7 @@ Characters: [docs/CAST.md](docs/CAST.md) · How to make an episode: [docs/PLAYBO
 | 08 | [Umbrella Duty](content/episodes/ep08-umbrella-duty.md) | `UmbrellaDuty` | 2D cartoon | Air resistance. Bigger umbrella, bigger push. |
 | 09 | [Big Bounce](content/episodes/ep09-big-bounce.md) | `BigBounce` | 2D cartoon | Energy is conserved. Kids are not. |
 | 10 | [One Flare](content/episodes/ep10-one-flare.md) | `OneFlare` | 2D cartoon | Shouts fade. Signs carry. |
-| 11 | [Wrong Door](content/episodes/ep11-wrong-door.md) | `WrongDoor` | 3D cartoon | Turning force = push × distance. Push far from the hinge. |
+| 11 | [Wrong Door](content/episodes/ep11-wrong-door.md) | `WrongDoor` | 3D cartoon | Push far from the hinge. That's why handles are on the edge. |
 | 12 | [It's RIGHT There](content/episodes/ep12-right-there.md) | `RightThere` | 3D cartoon | Water bends light. Things are deeper than they look. |
 
 New episodes (ep11 on) use the **3D cartoon look**: `Toon3D` characters on a `Stage3D` set (`src/world3d/`), with a fast shot-list camera. Copy `src/episodes/ep11-wrong-door/`.

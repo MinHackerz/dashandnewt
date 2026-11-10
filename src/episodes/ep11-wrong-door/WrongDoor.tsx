@@ -7,7 +7,7 @@ import { solve, toWorld } from "../../rig/Stickman";
 import { Toon3D } from "../../rig3d/Toon3D";
 import { ChalkPath, ChalkText } from "../../shared/chalk";
 import { ChalkNote, Stamp } from "../../shared/lesson";
-import { FONT_STACK, HookTitle, Stars } from "../../shared/ui";
+import { Caption, FONT_STACK, HookTitle, Stars } from "../../shared/ui";
 import { H, Stage3D, W, type Cam } from "../../world3d/Stage3D";
 import { camAt, CUTS } from "./camera";
 import { dashAt, newtAt } from "./cast";
@@ -62,11 +62,11 @@ const Look: React.FC<{ t: number; cam: Cam }> = ({ t, cam }) => {
       <ChalkText x={h.x + 14} y={top.y - 26} t={t} at={LOOK.hinge + 0.15} size={78} outline write={0.05}>hinge</ChalkText>
       {/* Dash's distance: tiny */}
       <ChalkPath d={L(h, tiny)} t={t} at={LOOK.tiny} dur={0.25} width={12} color="#ff6b5e" outline />
-      <ChalkText x={tiny.x - 34} y={tiny.y + 26} t={t} at={LOOK.tiny + 0.2} size={80} color="#ff6b5e" outline write={0.05} anchor="end">tiny</ChalkText>
+      <ChalkText x={tiny.x + 24} y={tiny.y - 40} t={t} at={LOOK.tiny + 0.2} size={72} color="#ff6b5e" outline write={0.05} anchor="start">Dash pushed here</ChalkText>
       {/* Newt's distance: big */}
       <ChalkPath d={L({ x: h.x, y: h.y + 150 }, { x: big.x, y: big.y + 150 })} t={t} at={LOOK.big} dur={0.5} width={12} color="#ffd23f" outline />
       <ChalkPath d={head({ x: big.x, y: big.y + 150 }, { x: h.x, y: h.y + 150 })} t={t} at={LOOK.big + 0.4} dur={0.2} width={12} color="#ffd23f" outline />
-      <ChalkText x={(h.x + big.x) / 2 - 40} y={big.y + 250} t={t} at={LOOK.big + 0.5} size={88} color="#ffd23f" outline write={0.05}>BIG distance</ChalkText>
+      <ChalkText x={(h.x + big.x) / 2 - 40} y={big.y + 250} t={t} at={LOOK.big + 0.5} size={88} color="#ffd23f" outline write={0.05}>Newt pushes here</ChalkText>
     </svg>
   );
 };
@@ -79,8 +79,8 @@ const EndCard: React.FC<{ t: number }> = ({ t }) => {
   const line: React.CSSProperties = { fontFamily: FONT_STACK, fontSize: 96, color: "#fff", textAlign: "center", lineHeight: 1.15, padding: "0 70px" };
   return (
     <AbsoluteFill style={{ backgroundColor: `rgba(17,17,17,${dark})`, justifyContent: "center", alignItems: "center", gap: 30 }}>
-      <div style={{ ...line, scale: String(Math.max(0, l1)), opacity: t > END_FADE + 0.4 ? 1 : 0 }}>Turning force = push × distance.</div>
-      <div style={{ ...line, color: "#ffd23f", scale: String(Math.max(0, l2)), opacity: t > END_FADE + 1.1 ? 1 : 0 }}>Push far from the hinge.</div>
+      <div style={{ ...line, scale: String(Math.max(0, l1)), opacity: t > END_FADE + 0.4 ? 1 : 0 }}>Push far from the hinge.</div>
+      <div style={{ ...line, color: "#ffd23f", scale: String(Math.max(0, l2)), opacity: t > END_FADE + 1.1 ? 1 : 0 }}>That's why handles are on the edge.</div>
     </AbsoluteFill>
   );
 };
@@ -102,12 +102,21 @@ const Picture: React.FC = () => {
           <Stars t={t} x={star.x} y={star.y - 95 * cam.zoom} />
         </svg>
       ) : null}
-      <ChalkNote t={t} from={LOOK.note} to={LOOK.end} top={150} gap={1.5} size={58} highlight={[2]} lines={["turning force = push × distance", "BIG push × tiny distance ✗", "tiny push × BIG distance ✓"]} />
-      <Stamp t={t} from={TRY1.push} to={TRY1.give} text="TRY #1: PUSH" top={230} />
-      <Stamp t={t} from={TRY2.push} to={TRY2.give} text="TRY #2: PUSH HARDER" top={230} size={72} />
-      <Stamp t={t} from={TRY3.back + 0.3} to={TRY3.hit} text="TRY #3: RUN-UP" top={230} />
-      <Stamp t={t} from={OPEN.push + 0.3} to={OPEN.push + 2.0} text="ONE FINGER" color="#2a9d8f" top={230} />
-      <Stamp t={t} from={UP.proud + 0.2} to={SLAM} text="TRY #4: WITH PRIDE" top={230} size={72} />
+      <ChalkNote t={t} from={LOOK.note} to={LOOK.end} top={130} gap={1.3} size={54} highlight={[3]} lines={["Doors turn on their hinges.", "Push NEAR the hinge: super hard.", "Push FAR from the hinge: super easy.", "That's why handles are on the far edge!"]} />
+      <Stamp t={t} from={TRY1.hand} to={TRY1.give} text="PLAN #1: PUSH IT" top={230} size={74} />
+      <Stamp t={t} from={TRY2.hand} to={TRY2.give} text="PLAN #2: PUSH HARDER" top={230} size={70} />
+      <Stamp t={t} from={TRY3.back + 0.3} to={TRY3.hit} text="PLAN #3: RUN AT IT" top={230} size={72} />
+      <Stamp t={t} from={OPEN.walk + 0.2} to={OPEN.push + 2.0} text="NEWT'S PLAN: ONE FINGER" color="#2a9d8f" top={230} size={64} />
+      <Stamp t={t} from={UP.proud + 0.2} to={SLAM} text="PLAN #4: WALK IN PROUDLY" top={230} size={62} />
+      {/* plain-language captions: what they want, and what just happened */}
+      <Caption text="Dash wants ice cream. The door says PUSH." from={0.4} to={TRY1.hand - 0.05} />
+      <Caption text="He's pushing right next to the hinges…" from={TRY1.push + 0.5} to={TRY1.give} />
+      <Caption text="Door: not moving." from={TRY1.give + 0.05} to={TRY2.hand - 0.1} />
+      <Caption text="Harder. Still right next to the hinges." from={TRY2.push + 0.6} to={TRY2.give} />
+      <Caption text="Door: 1. Dash: 0." from={TRY3.land + 0.3} to={LOOK.at - 0.1} />
+      <Caption text="One finger. At the far edge." from={OPEN.push + 0.2} to={OPEN.push + 2.2} />
+      <Caption text="The door closes by itself. He didn't read that sign." from={UP.stand} to={UP.go} />
+      <Caption text="Door: 2. Dash: 0." from={FALL.land + 0.2} to={AGAIN.walk + 0.3} />
       <EndCard t={t} />
     </>
   );
