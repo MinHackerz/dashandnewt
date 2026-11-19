@@ -1,0 +1,123 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: s01-frozen-turkey
+title: Why You Should NEVER Fry a Frozen Turkey
+status: draft
+video: out/frozen-turkey.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Why You Should NEVER Fry a Frozen Turkey 🦃🔥 #Shorts"
+  description: |-
+    A frozen turkey is covered in ice. Frying oil is about 350°F (175°C). Put them together and it goes wrong within seconds. 🧊
+
+    The ice melts, and water is heavier than oil, so it sinks to the bottom of the pot. Down there it instantly boils, and steam takes up about 1,700 times more space than the water it came from.
+
+    That steam shoves the oil up and over the rim, right onto the burner flame. 🔥
+
+    The safe way: thaw it completely (about a day in the fridge for every 4 to 5 lb), pat it dry, and turn the flame OFF before the turkey goes in.
+
+    Have you ever seen a turkey fryer go wrong? 👇
+
+    📌 Remember: Thaw it completely. Pat it dry. Flame off before it goes in.
+
+    Real science, explained in under a minute.
+    🔔 Subscribe for more.
+
+    3D model credits (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), via Sketchfab:
+    "whole raw chicken 3d model" by grodan: https://sketchfab.com/3d-models/whole-raw-chicken-3d-model-82c92a43fe0e4320bbbeba86dc0858a0
+    "Propane Tank" by Oliver Triplett: https://sketchfab.com/3d-models/propane-tank-d0fd95adb402424c84ef6f715d529363
+    "Fire Extinguisher" by Loïc: https://sketchfab.com/3d-models/fire-extinguisher-5676b179b3b744c0aaae53a3dcea2300
+    "Meat thermometer" by FractDesign: https://sketchfab.com/3d-models/meat-thermometer-ec924e5d71634c60801b247beb5f4f76
+    "Paper Towel Roll" by HippoStance: https://sketchfab.com/3d-models/paper-towel-roll-e10eb527561048b6bc1786c8c44cd0f5
+    "Wall Clock" by FelipeMSX: https://sketchfab.com/3d-models/wall-clock-2e964ac0242e4b1789adfd9549c653dc
+    "Autumn Leaves" by RBG_illustrations: https://sketchfab.com/3d-models/autumn-leaves-2ba028253c9241a38d4ab6d7bc63fb72
+    The models were resized and re-textured for this video.
+
+    #shorts #thanksgiving #science #turkey #cookingsafety
+  tags:
+    - frozen turkey
+    - deep fried turkey
+    - turkey fryer fire
+    - never fry a frozen turkey
+    - why frozen turkeys explode
+    - thanksgiving safety
+    - thanksgiving
+    - turkey fryer
+    - how to deep fry a turkey safely
+    - steam explosion
+    - cooking safety
+    - science explained
+    - physics explained
+    - how it works
+    - 3d animation
+    - science shorts
+  category: Education
+  playlists: []
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~27.5s in the YouTube app (or use out/frozen-turkey-thumb.png where a custom image is allowed).
+instagram:
+  caption: |-
+    Never fry a FROZEN turkey 🦃🔥
+
+    Ice melts, the water sinks under the oil, and at the bottom it flashes into steam: about 1,700 times more space. The oil has nowhere to go but up and over, onto the flame.
+
+    Thaw it completely, pat it dry, flame OFF before it goes in.
+
+    Ever seen a turkey fryer go wrong? 👇
+
+    Send this to whoever is frying the turkey this year 🦃
+    Follow for more quick science explainers ✨
+
+    3D model credits (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), via Sketchfab:
+    "whole raw chicken 3d model" by grodan: https://sketchfab.com/3d-models/whole-raw-chicken-3d-model-82c92a43fe0e4320bbbeba86dc0858a0
+    "Propane Tank" by Oliver Triplett: https://sketchfab.com/3d-models/propane-tank-d0fd95adb402424c84ef6f715d529363
+    "Fire Extinguisher" by Loïc: https://sketchfab.com/3d-models/fire-extinguisher-5676b179b3b744c0aaae53a3dcea2300
+    "Meat thermometer" by FractDesign: https://sketchfab.com/3d-models/meat-thermometer-ec924e5d71634c60801b247beb5f4f76
+    "Paper Towel Roll" by HippoStance: https://sketchfab.com/3d-models/paper-towel-roll-e10eb527561048b6bc1786c8c44cd0f5
+    "Wall Clock" by FelipeMSX: https://sketchfab.com/3d-models/wall-clock-2e964ac0242e4b1789adfd9549c653dc
+    "Autumn Leaves" by RBG_illustrations: https://sketchfab.com/3d-models/autumn-leaves-2ba028253c9241a38d4ab6d7bc63fb72
+    The models were resized and re-textured for this video.
+
+    #thanksgiving #turkey #science #cookingsafety #3danimation
+  cover_frame_s: 27.5
+  alt_text: "Realistic 3D animation with a narrator. A frozen, frost-covered turkey on a rack is lowered toward a pot of hot oil on an outdoor gas burner; a dial reads 350 degrees Fahrenheit. A slow-motion cutaway of the pot shows melted ice sinking as water drops through the oil and flashing into steam bubbles at the bottom. The oil boils over the rim onto the burner and catches fire. The ending shows the safe way: the turkey thawing on a tray while a clock spins, its skin patted dry, then lowered into the pot with the burner off."
+  share_to_feed: true
+facebook:
+  title: Why You Should NEVER Fry a Frozen Turkey 🦃🔥
+  description: |-
+    A frozen turkey is covered in ice. Frying oil is about 350°F (175°C). Put them together and it goes wrong within seconds. 🧊
+
+    The ice melts, and water is heavier than oil, so it sinks to the bottom of the pot. Down there it instantly boils, and steam takes up about 1,700 times more space than the water it came from.
+
+    That steam shoves the oil up and over the rim, right onto the burner flame. 🔥
+
+    The safe way: thaw it completely (about a day in the fridge for every 4 to 5 lb), pat it dry, and turn the flame OFF before the turkey goes in.
+
+    Have you ever seen a turkey fryer go wrong? 👇
+
+    📌 Remember: Thaw it completely. Pat it dry. Flame off before it goes in.
+
+    Real science, explained in under a minute. Follow the page for more.
+
+    3D model credits (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), via Sketchfab:
+    "whole raw chicken 3d model" by grodan: https://sketchfab.com/3d-models/whole-raw-chicken-3d-model-82c92a43fe0e4320bbbeba86dc0858a0
+    "Propane Tank" by Oliver Triplett: https://sketchfab.com/3d-models/propane-tank-d0fd95adb402424c84ef6f715d529363
+    "Fire Extinguisher" by Loïc: https://sketchfab.com/3d-models/fire-extinguisher-5676b179b3b744c0aaae53a3dcea2300
+    "Meat thermometer" by FractDesign: https://sketchfab.com/3d-models/meat-thermometer-ec924e5d71634c60801b247beb5f4f76
+    "Paper Towel Roll" by HippoStance: https://sketchfab.com/3d-models/paper-towel-roll-e10eb527561048b6bc1786c8c44cd0f5
+    "Wall Clock" by FelipeMSX: https://sketchfab.com/3d-models/wall-clock-2e964ac0242e4b1789adfd9549c653dc
+    "Autumn Leaves" by RBG_illustrations: https://sketchfab.com/3d-models/autumn-leaves-2ba028253c9241a38d4ab6d7bc63fb72
+    The models were resized and re-textured for this video.
+
+    #thanksgiving #science #cookingsafety
+approval: null
+results: {}

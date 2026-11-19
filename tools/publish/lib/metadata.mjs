@@ -45,7 +45,17 @@ function fitTags(tags, budget = 500) {
   return out;
 }
 
-export function generate(sheet, defaults = loadDefaults()) {
+/** channel defaults with the brief's `profile` (e.g. "explainer" for the science shorts) laid over them */
+export function withProfile(defaults, profile) {
+  if (!profile) return defaults;
+  const p = defaults.profiles?.[profile];
+  if (!p) throw new Error(`unknown publish profile "${profile}" (content/channel/publish-defaults.yaml → profiles)`);
+  const out = { ...defaults };
+  for (const k of ["youtube", "instagram", "facebook"]) out[k] = { ...defaults[k], ...(p[k] ?? {}) };
+  return out;
+}
+
+export function generate(sheet, baseDefaults = loadDefaults()) {
   const b = sheet.brief;
   if (!b) {
     throw new Error(
@@ -55,9 +65,11 @@ export function generate(sheet, defaults = loadDefaults()) {
   for (const k of ["hook", "story", "question"]) {
     if (!b[k]) throw new Error(`${sheet.key}: Publish brief is missing "${k}"`);
   }
+  const defaults = withProfile(baseDefaults, b.profile);
   const ig = b.instagram ?? {};
   const moral = b.moral ?? sheet.moral;
-  const moralLine = moral ? `📌 Moral: ${moral}` : null;
+  const moralLine = moral ? `📌 ${defaults.youtube.moral_label ?? "Moral"}: ${moral}` : null;
+  const credits = b.credits ? String(b.credits).trim() : null; // CC-BY attributions: every platform, every time
   const yt = defaults.youtube;
   const topic = (b.hashtags ?? []).map(hashtag);
 
@@ -69,14 +81,15 @@ export function generate(sheet, defaults = loadDefaults()) {
       b.question,
       moralLine,
       yt.footer,
+      credits,
       ytHashtags.join(" "),
     ]
       .filter(Boolean)
       .join("\n\n"),
     tags: fitTags([...yt.tags, ...(b.keywords ?? [])]),
     category: yt.category,
-    playlists: uniq(["all", ...(b.playlists ?? [])]).map(
-      (k) => yt.playlists[k] ?? k,
+    playlists: uniq([...(yt.playlists?.all ? ["all"] : []), ...(b.playlists ?? [])]).map(
+      (k) => yt.playlists?.[k] ?? k,
     ),
     privacy: yt.privacy,
     made_for_kids: yt.made_for_kids,
@@ -93,6 +106,7 @@ export function generate(sheet, defaults = loadDefaults()) {
       ig.question ?? b.question,
       [ig.tag_friend, defaults.instagram.follow].filter(Boolean).join("\n"),
       moralLine,
+      credits,
       igTags.join(" "),
     ]
       .filter(Boolean)
@@ -114,6 +128,7 @@ export function generate(sheet, defaults = loadDefaults()) {
       b.question,
       moralLine,
       fb.footer,
+      credits,
       fbTags.join(" "),
     ]
       .filter(Boolean)

@@ -8,7 +8,7 @@ import { EPISODES_DIR, PUBLISH_DIR, ROOT } from "./env.mjs";
 export function listEpisodes() {
   return fs
     .readdirSync(EPISODES_DIR)
-    .filter((f) => /^ep\d+-[a-z0-9-]+\.md$/.test(f))
+    .filter((f) => /^(ep|s)\d+-[a-z0-9-]+\.md$/.test(f)) // epNN = Dash & Newt, sNN = science shorts
     .sort()
     .map((f) => readSheet(path.join(EPISODES_DIR, f)));
 }
@@ -28,10 +28,12 @@ export function resolveEpisode(arg) {
     };
   }
   const want = arg.toLowerCase().replace(/^ep/, "");
+  const short = /^s\d+$/.test(arg.toLowerCase()) ? arg.toLowerCase() : null;
   const all = listEpisodes();
   const hit = all.find(
     (e) =>
       e.key === arg.toLowerCase() ||
+      (short && e.key.startsWith(`${short}-`)) ||
       e.slug === arg.toLowerCase() ||
       e.composition?.toLowerCase() === arg.toLowerCase() ||
       (/^\d+$/.test(want) && Number(want) === e.number),
@@ -51,10 +53,12 @@ export function resolveEpisode(arg) {
 export function readSheet(file) {
   const md = fs.readFileSync(file, "utf8");
   const key = path.basename(file, ".md");
-  const m = /^ep(\d+)-(.+)$/.exec(key);
+  const m = /^(?:ep|s)(\d+)-(.+)$/.exec(key);
+  const isShort = key.startsWith("s");
   const field = (label) =>
     new RegExp(`\\*\\*${label}:\\*\\*\\s*(.+)`).exec(md)?.[1].trim();
-  const title = /^#\s*Ep\s*\d+\s*[—-]\s*(.+)$/m.exec(md)?.[1].trim() ?? key;
+  const title =
+    /^#\s*(?:Ep|Short)\s*s?\d*\s*[—-]\s*(.+)$/m.exec(md)?.[1].trim() ?? key;
   const compLine = field("Composition") ?? "";
   const composition = /`([A-Za-z0-9]+)`/.exec(compLine)?.[1];
   const length = Number(/·\s*([\d.]+)\s*s/.exec(compLine)?.[1]) || undefined;
@@ -79,7 +83,7 @@ export function readSheet(file) {
   }
   return {
     key,
-    number: m ? Number(m[1]) : NaN,
+    number: m && !isShort ? Number(m[1]) : NaN, // bare numbers ("3") mean Dash & Newt episodes
     slug: m ? m[2] : key,
     title,
     composition,

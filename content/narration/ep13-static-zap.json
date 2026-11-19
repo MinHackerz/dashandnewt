@@ -1,0 +1,43 @@
+{
+  "voice": "am_puck",
+  "speed": 1.14,
+  "note": "Ep 13 narration. Plain words; every claim checked in content/episodes/ep13-static-zap.md (Physics).",
+  "lines": [
+    {
+      "id": "hook",
+      "text": "Ever touched a door handle and got ZAPPED? Here's why."
+    },
+    {
+      "id": "rub",
+      "text": "When Dash shuffles across the carpet, his rubber soles rub the fibers and steal tiny particles called electrons."
+    },
+    {
+      "id": "spread",
+      "text": "Rubber won't let them escape, so they spread all over him. Even his hair stands up: the extra electrons push each other away."
+    },
+    {
+      "id": "volts",
+      "text": "By the door, he's carrying about ten thousand volts."
+    },
+    {
+      "id": "tip",
+      "text": "Metal is an easy road for electrons, so they rush into his fingertip,"
+    },
+    {
+      "id": "jump",
+      "text": "and jump the last few millimeters all at once. A tiny bolt of lightning!"
+    },
+    {
+      "id": "zap",
+      "text": "Lots of volts, but far too little current to hurt. Just a sting."
+    },
+    {
+      "id": "key",
+      "text": "Newt's trick? Touch the metal with a key first. The spark hits the key, not your skin."
+    },
+    {
+      "id": "mouth",
+      "text": "Not in your mouth, Dash."
+    }
+  ]
+}

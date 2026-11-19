@@ -15,6 +15,20 @@ out
 
 # Python virtualenv for the numpy/scipy sound generators (tools/sfx)
 .venv/
+.venv-modal/
 
 # Generated sound library (~270 MB): rebuilt byte-for-byte by `npm run sfx` from tools/sfx
 public/sfx/
+
+# Blender scenes and downloaded models/textures (top-level blender/ only; the build scripts in tools/blender ARE
+# committed): licences allow use in renders, not redistribution, and every scene is rebuilt by tools/blender/*.py
+/blender/
+
+
+# Blender renders encoded for the edit (rebuilt from tools/blender by rendering; large)
+public/renders/
+
+# Python bytecode; the compiled macOS thermal probe (built from tools/render/thermal.swift on first use)
+__pycache__/
+*.pyc
+tools/render/thermal_state

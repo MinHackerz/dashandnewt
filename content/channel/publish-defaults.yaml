@@ -35,3 +35,23 @@ facebook:
   footer: Dash & Newt — brute force vs. physics. Follow the page for a new cartoon short every week.
   # FB style: few hashtags. Episode's first `hashtags` entry + these, max 3.
   hashtags: [funnyanimation, dashandnewt]
+
+# Per-series overrides, chosen by a brief's `profile:` key. Science shorts (content/episodes/sNN-*.md) use
+# `profile: explainer`: realistic Blender explainers narrated by Liam, filed under Education.
+profiles:
+  explainer:
+    youtube:
+      title_suffix: " #Shorts"
+      moral_label: Remember
+      footer: |-
+        Real science, explained in under a minute.
+        🔔 Subscribe for more.
+      hashtags: []
+      tags: [science explained, how it works, science shorts, 3d animation]
+      category: Education
+      playlists: {}
+    instagram:
+      follow: Follow for more quick science explainers ✨
+    facebook:
+      footer: Real science, explained in under a minute. Follow the page for more.
+      hashtags: [science]

@@ -1,0 +1,43 @@
+{
+ "CUE": {
+  "fps": 30,
+  "hook": 0.0,
+  "lower_end": 4.107,
+  "oil": 4.89,
+  "f350": 5.76,
+  "ice": 7.86,
+  "cutaway": 10.188,
+  "touch": 10.8,
+  "sinks": 12.0,
+  "heavier": 13.44,
+  "bottom": 15.08,
+  "boils": 16.72,
+  "x1700": 18.8,
+  "shoves": 23.12,
+  "over": 24.56,
+  "flame": 26.44,
+  "thanksgiving": 27.34,
+  "fires": 30.8,
+  "thaw": 32.0,
+  "dry": 33.24,
+  "off": 35.04,
+  "goes_in": 35.96,
+  "end": 38.24
+ },
+ "PHYS": {
+  "rho_oil": 910.0,
+  "rho_water": 1000.0,
+  "mu_oil": 0.0025,
+  "drop_d": 0.004,
+  "oil_depth": 0.2,
+  "v_drop": 0.0689,
+  "re_drop": 100.3,
+  "sink_time": 2.903,
+  "steam_ratio": 1700,
+  "bubble_growth": 11.93,
+  "oil_temp_c": 175,
+  "oil_temp_f": 350
+ },
+ "VO_OFFSET": 0.4,
+ "DUR": 38.24
+}

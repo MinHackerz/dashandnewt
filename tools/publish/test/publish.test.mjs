@@ -204,11 +204,18 @@ describe("metadata", () => {
         size: 1e7,
       });
       assert.deepEqual(errors, []);
-      assert.match(meta.youtube.title, /\| Dash & Newt #Shorts$/);
+      const sheet = readSheet(ep.file);
+      const explainer = sheet.brief?.profile === "explainer"; // science shorts (sNN)
+      assert.match(meta.youtube.title, explainer ? / #Shorts$/ : /\| Dash & Newt #Shorts$/);
+      if (explainer) assert.equal(meta.youtube.category, "Education");
+      if (explainer && sheet.brief.credits) {
+        for (const p of [meta.youtube.description, meta.instagram.caption, meta.facebook.description])
+          assert.ok(p.includes(String(sheet.brief.credits).trim().split("\n")[0]), "credits on every platform");
+      }
       assert.ok([...meta.youtube.title].length <= 100);
       assert.ok(ytTagChars(meta.youtube.tags) <= 500);
       assert.equal(meta.instagram.caption.match(/#\w+/g).length, 5);
-      assert.ok(meta.instagram.caption.includes("📌 Moral:"));
+      assert.ok(meta.instagram.caption.includes(explainer ? "📌 Remember:" : "📌 Moral:"));
       assert.ok(meta.facebook.description.match(/#\w+/g).length <= 3);
     });
   }

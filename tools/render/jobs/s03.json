@@ -1,0 +1,37 @@
+{
+  "name": "s03",
+  "about": "s03 'Why your laptop gets so hot' — final quality (384 spp, OIDN high, 16-bit PNG)",
+  "blend": "blender/s03_set.blend",
+  "script": "tools/blender/s03_render.py",
+  "args": [
+    "final"
+  ],
+  "plan": "tools/blender/s03_plan.json",
+  "local_out": "out/blender/s03",
+  "env": {
+    "S03_CLOUD": "1"
+  },
+  "frames_env": "S03_FRAMES",
+  "out_env": "S03_OUT",
+  "compute_env": "S03_COMPUTE",
+  "files": [
+    "blender/s03_set.blend",
+    "tools/render/thermal_guard.py"
+  ],
+  "dirs": [
+    "tools/blender",
+    "blender/assets/s03",
+    "blender/assets/polyhaven/metal_office_desk/textures",
+    "blender/assets/renderpeople_free/rp_eric_rigged_001_FBX/tex"
+  ],
+  "sec_per_frame": {
+    "L40S": 21,
+    "T4": 110
+  },
+  "note": "sec_per_frame: measured on Modal L40S (2026-11-20); T4 is an estimate until a Kaggle/Colab run measures it",
+  "modal_volume": "s03-frames",
+  "times": "tools/blender/s03_times.json",
+  "picture": "public/renders/s03.mp4",
+  "composition": "HotLaptop",
+  "final": "out/hot-laptop.mp4"
+}

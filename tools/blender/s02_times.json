@@ -1,0 +1,42 @@
+{
+ "CUE": {
+  "fps": 30,
+  "hook": 0.0,
+  "body": 2.99,
+  "insides": 5.12,
+  "hands": 6.16,
+  "cold1": 8.14,
+  "core": 9.33,
+  "muscles": 11.76,
+  "tug": 12.5,
+  "front": 13.52,
+  "pulls1": 15.0,
+  "back": 16.03,
+  "pulls2": 16.68,
+  "nobody": 17.78,
+  "barely": 19.66,
+  "effort": 20.58,
+  "heat": 22.4,
+  "teeth": 23.03,
+  "chatter": 24.2,
+  "jaw": 25.02,
+  "goose": 26.39,
+  "tiny": 27.58,
+  "stand": 28.34,
+  "fur": 29.8,
+  "so": 31.94,
+  "honestly": 34.36,
+  "coat_land": 35.66,
+  "end": 39.36
+ },
+ "PHYS": {
+  "shiver_hz": 9.0,
+  "chatter_hz": 7.0,
+  "heat_x": 5,
+  "core_f": 98.6,
+  "hand_f": 77,
+  "g": 9.81
+ },
+ "VO_OFFSET": 0.4,
+ "DUR": 39.36
+}

@@ -77,3 +77,11 @@ meme clips). See `docs/PLAYBOOK.md → Sound`.
 - [ ] No spoken voice; each character keeps his own non-verbal sound signature.
 - [ ] Back limbs are grey (`BACK_INK`) so overlapping arms/legs stay readable.
 - [ ] Each beat has its own facial expression (`src/rig/library.ts → FACES`).
+
+## Realistic cast (Blender close-up episodes, from 2026-11-13)
+
+Built by `tools/blender/mixamo_cast.py` (model sheet: `blender/mixamo_cast.blend`; files in `blender/assets/characters/`, git-ignored).
+
+- **Dash:** Mixamo "Ch42" (free for commercial video): young man, tattooed arms. Everyday clothes from Poly Haven fabric scans: plain royal-blue cotton tee with **DASH** printed front and back, denim shorts, white sneakers. ~1.8 m.
+- **Newt:** "Black Boy Rigged Ready For Ue4" by **MotionStudioArts** (Sketchfab, **CC-BY 4.0**: every episode with Newt must credit "Newt 3D model: MotionStudioArts (Sketchfab), CC-BY 4.0" in its publish copy). A real child model, scaled to 1.25 m. Grass-green cotton tee with **NEWT** printed front and back, olive trousers, red sneakers. Unreal mannequin skeleton: `B()` in the cast script maps Mixamo bone names, so Mixamo animations need retargeting by that map.
+- Names are text decals projected onto the cloth and riding the chest bone, so they follow every pose.

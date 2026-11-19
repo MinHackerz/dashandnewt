@@ -9,6 +9,11 @@ import { OneFlare } from "./episodes/ep10-one-flare/OneFlare";
 import { DURATION as FLARE_DURATION } from "./episodes/ep10-one-flare/timeline";
 import { WrongDoor } from "./episodes/ep11-wrong-door/WrongDoor";
 import { RightThere } from "./episodes/ep12-right-there/RightThere";
+import { StaticZap } from "./episodes/ep13-static-zap/StaticZap";
+import { FrozenTurkey, FrozenTurkeyThumb, S01_DURATION } from "./episodes/s01-frozen-turkey/FrozenTurkey";
+import { Shiver, S02_DURATION } from "./episodes/s02-shiver/Shiver";
+import { HotLaptop, S03_DURATION } from "./episodes/s03-hot-laptop/HotLaptop";
+import { DURATION as ZAP_DURATION } from "./episodes/ep13-static-zap/timeline";
 import { DURATION as POOL_DURATION } from "./episodes/ep12-right-there/timeline";
 import { DURATION as DOOR_DURATION } from "./episodes/ep11-wrong-door/timeline";
 import { CastSheet } from "./rig2d/CastSheet";
@@ -119,6 +124,39 @@ export const RemotionRoot: React.FC = () => {
         id="RightThere"
         component={RightThere}
         durationInFrames={Math.round(POOL_DURATION * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="StaticZap"
+        component={StaticZap}
+        durationInFrames={Math.round(ZAP_DURATION * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FrozenTurkey"
+        component={FrozenTurkey}
+        durationInFrames={Math.round(S01_DURATION * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Still id="FrozenTurkeyThumb" component={FrozenTurkeyThumb} width={1080} height={1920} />
+      <Composition
+        id="HotLaptop"
+        component={HotLaptop}
+        durationInFrames={Math.round(S03_DURATION * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Shiver"
+        component={Shiver}
+        durationInFrames={Math.round(S02_DURATION * 30)}
         fps={30}
         width={1080}
         height={1920}

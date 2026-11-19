@@ -1,0 +1,65 @@
+{
+ "hook": {
+  "file": "voices/ep13-final/hook.wav",
+  "at": 0.12,
+  "seconds": 2.933,
+  "rate": 1.081,
+  "text": "Ever touched a door handle and got ZAPPED? Here's why."
+ },
+ "rub": {
+  "file": "voices/ep13-final/rub.wav",
+  "at": 3.172,
+  "seconds": 6.888,
+  "rate": 1.081,
+  "text": "When Dash shuffles across the carpet, his rubber soles rub the fibers and steal tiny particles called electrons."
+ },
+ "spread": {
+  "file": "voices/ep13-final/spread.wav",
+  "at": 10.163,
+  "seconds": 6.592,
+  "rate": 1.081,
+  "text": "Rubber won't let them escape, so they spread all over him. Even his hair stands up: the extra electrons push each other away."
+ },
+ "volts": {
+  "file": "voices/ep13-final/volts.wav",
+  "at": 16.858,
+  "seconds": 3.275,
+  "rate": 1.081,
+  "text": "By the door, he's carrying about ten thousand volts."
+ },
+ "tip": {
+  "file": "voices/ep13-final/tip.wav",
+  "at": 20.242,
+  "seconds": 4.067,
+  "rate": 1.081,
+  "text": "Metal is an easy road for electrons, so they rush into his fingertip,"
+ },
+ "jump": {
+  "file": "voices/ep13-final/jump.wav",
+  "at": 24.373,
+  "seconds": 4.752,
+  "rate": 1.101,
+  "text": "and jump the last few millimeters all at once. A tiny bolt of lightning!"
+ },
+ "zap": {
+  "file": "voices/ep13-final/zap.wav",
+  "at": 29.343,
+  "seconds": 4.022,
+  "rate": 1.101,
+  "text": "Lots of volts, but far too little current to hurt. Just a sting."
+ },
+ "key": {
+  "file": "voices/ep13-final/key.wav",
+  "at": 33.477,
+  "seconds": 4.565,
+  "rate": 1.101,
+  "text": "Newt's trick? Touch the metal with a key first. The spark hits the key, not your skin."
+ },
+ "mouth": {
+  "file": "voices/ep13-final/mouth.wav",
+  "at": 39.351,
+  "seconds": 1.87,
+  "rate": 1.0,
+  "text": "Not in your mouth, Dash."
+ }
+}

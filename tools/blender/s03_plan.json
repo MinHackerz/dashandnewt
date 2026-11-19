@@ -1,0 +1,198 @@
+{
+ "s01_typing": {
+  "station": "E",
+  "f0": 1,
+  "f1": 123,
+  "cut": 123,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s02_thermal": {
+  "station": "E",
+  "f0": 124,
+  "f1": 270,
+  "cut": 270,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 1.0,
+  "fan": false
+ },
+ "s03_diveA": {
+  "station": "A",
+  "f0": 271,
+  "f1": 325,
+  "cut": 317,
+  "dissolve": 8,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s04_diveB": {
+  "station": "B",
+  "f0": 318,
+  "f1": 392,
+  "cut": 384,
+  "dissolve": 8,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s05_diveC": {
+  "station": "C",
+  "f0": 385,
+  "f1": 436,
+  "cut": 428,
+  "dissolve": 8,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s06_diveD": {
+  "station": "D",
+  "f0": 429,
+  "f1": 497,
+  "cut": 497,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s07_electrons": {
+  "station": "D",
+  "f0": 498,
+  "f1": 617,
+  "cut": 617,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s08_bump": {
+  "station": "D",
+  "f0": 618,
+  "f1": 764,
+  "cut": 764,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false,
+  "thermal_ramp": [
+   736,
+   754
+  ]
+ },
+ "s09_array": {
+  "station": "D",
+  "f0": 765,
+  "f1": 867,
+  "cut": 867,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 1.0,
+  "fan": false
+ },
+ "s10_die": {
+  "station": "C",
+  "f0": 868,
+  "f1": 977,
+  "cut": 977,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false,
+  "thermal_ramp": [
+   935,
+   953
+  ]
+ },
+ "s11_pipes": {
+  "station": "B",
+  "f0": 978,
+  "f1": 1011,
+  "cut": 1011,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s12_hotend": {
+  "station": "F",
+  "f0": 1012,
+  "f1": 1128,
+  "cut": 1128,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s13_vapour": {
+  "station": "F",
+  "f0": 1129,
+  "f1": 1190,
+  "cut": 1190,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s14_coldend": {
+  "station": "F",
+  "f0": 1191,
+  "f1": 1272,
+  "cut": 1272,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s15_fan": {
+  "station": "B",
+  "f0": 1273,
+  "f1": 1361,
+  "cut": 1361,
+  "dissolve": 0,
+  "fx": [
+   "air"
+  ],
+  "thermal": 0.0,
+  "fan": true
+ },
+ "s16_vents": {
+  "station": "B",
+  "f0": 1362,
+  "f1": 1404,
+  "cut": 1404,
+  "dissolve": 0,
+  "fx": [
+   "haze"
+  ],
+  "thermal": 0.0,
+  "fan": true
+ },
+ "s17_touch": {
+  "station": "E",
+  "f0": 1405,
+  "f1": 1476,
+  "cut": 1476,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 0.0,
+  "fan": false
+ },
+ "s18_end": {
+  "station": "E",
+  "f0": 1477,
+  "f1": 1557,
+  "cut": 1557,
+  "dissolve": 0,
+  "fx": [],
+  "thermal": 1.0,
+  "fan": false
+ },
+ "_progress": {
+  "from": 0.18,
+  "to": 0.62
+ }
+}

@@ -1,0 +1,122 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: s03-hot-laptop
+title: Why Your Laptop Gets So HOT When Rendering
+status: draft
+video: out/hot-laptop.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Why Your Laptop Gets So HOT (Inside the Chip) 🔥💻 #Shorts"
+  description: |-
+    Why does your laptop get so hot when it renders a video or plays a game? Through a thermal camera, all the heat comes from one spot: right above the chip. 🔥
+
+    Inside that chip are billions of tiny switches called transistors. Every time one switches, electrons are pushed through the silicon, bump into its atoms, and each bump turns a little electricity into heat. A heavy job flips these switches billions of times a second, so almost all the power the chip uses ends up as heat.
+
+    To get rid of it, a sealed copper heat pipe holds a little water. The hot chip turns it into vapour, the vapour rushes to the cold end, turns back into water, and soaks back through the wick to do it again. 💧 Then a fan blows air through thin metal fins and out the side vents.
+
+    That's why one side of your laptop gets so hot, and why you should never block the vents. 🚫
+
+    Does your laptop get hot on your lap? 👇
+
+    📌 Remember: Never block the vents.
+
+    Real science, explained in under a minute.
+    🔔 Subscribe for more.
+
+    3D model credit (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), via Sketchfab:
+    "Laptop" by CG Soul Motion: https://sketchfab.com/3d-models/laptop-a14d471ffda04d38a1910b9ef87e8dff
+    The model was modified and re-textured for this video.
+    3D person: Renderpeople (renderpeople.com). Studio lighting: Poly Haven (CC0).
+
+    #laptop #science #physics #technology
+  tags:
+    - science explained
+    - how it works
+    - science shorts
+    - 3d animation
+    - why laptop gets hot
+    - laptop overheating
+    - laptop heat
+    - how laptops cool down
+    - heat pipe
+    - how heat pipes work
+    - laptop fan
+    - laptop cooling
+    - cpu heat
+    - why cpu gets hot
+    - transistors
+    - how transistors work
+    - how a cpu works
+    - inside a laptop
+    - inside a computer chip
+    - thermal camera
+    - joule heating
+    - rendering
+    - laptop vents
+    - physics explained
+    - tech explained
+    - computer science
+    - electronics
+    - satisfying science
+  category: Education
+  playlists: []
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~5.5s in the YouTube app.
+instagram:
+  caption: |-
+    Why your laptop gets so HOT 🔥💻
+
+    Billions of tiny switches flip billions of times a second, and every flip turns a little electricity into heat.
+
+    A copper heat pipe full of water carries it to the fins, and the fan blows it out the side vents. 💧
+
+    Does your laptop get hot on your lap? 👇
+
+    Send this to the friend who games on their bed 🛏️
+    Follow for more quick science explainers ✨
+
+    📌 Remember: Never block the vents.
+
+    3D model credit (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), via Sketchfab:
+    "Laptop" by CG Soul Motion: https://sketchfab.com/3d-models/laptop-a14d471ffda04d38a1910b9ef87e8dff
+    The model was modified and re-textured for this video.
+    3D person: Renderpeople (renderpeople.com). Studio lighting: Poly Haven (CC0).
+
+    #laptop #science #technology #howthingswork #3danimation
+  cover_frame_s: 5.5
+  alt_text: Realistic 3D animation with a narrator. A man types on a laptop at a desk; a thermal-camera view shows the heat gathered above the chip. The camera dives inside the laptop, past the copper cooling plate, onto the chip and down to rows of tiny transistors where glowing electrons flow through the silicon and the thermal view turns hot. A cut-open copper heat pipe shows vapour rushing to the cold end and water creeping back through the wick, then a blower fan pushes air through thin metal fins and out of the side vents. The man touches the hot side of the laptop and pulls his hand back.
+  share_to_feed: true
+facebook:
+  title: Why Your Laptop Gets So HOT (Inside the Chip) 🔥💻
+  description: |-
+    Why does your laptop get so hot when it renders a video or plays a game? Through a thermal camera, all the heat comes from one spot: right above the chip. 🔥
+
+    Inside that chip are billions of tiny switches called transistors. Every time one switches, electrons are pushed through the silicon, bump into its atoms, and each bump turns a little electricity into heat. A heavy job flips these switches billions of times a second, so almost all the power the chip uses ends up as heat.
+
+    To get rid of it, a sealed copper heat pipe holds a little water. The hot chip turns it into vapour, the vapour rushes to the cold end, turns back into water, and soaks back through the wick to do it again. 💧 Then a fan blows air through thin metal fins and out the side vents.
+
+    That's why one side of your laptop gets so hot, and why you should never block the vents. 🚫
+
+    Does your laptop get hot on your lap? 👇
+
+    📌 Remember: Never block the vents.
+
+    Real science, explained in under a minute. Follow the page for more.
+
+    3D model credit (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), via Sketchfab:
+    "Laptop" by CG Soul Motion: https://sketchfab.com/3d-models/laptop-a14d471ffda04d38a1910b9ef87e8dff
+    The model was modified and re-textured for this video.
+    3D person: Renderpeople (renderpeople.com). Studio lighting: Poly Haven (CC0).
+
+    #laptop #science
+approval: null
+results: {}

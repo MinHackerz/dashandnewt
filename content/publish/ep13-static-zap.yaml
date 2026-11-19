@@ -1,0 +1,101 @@
+# Review this file, then approve it: npm run publish:approve -- <episode>
+# Edit any text below before approving. Nothing is uploaded while status is draft, and any edit
+# (or a re-render of the video) after approval blocks publishing until you approve again.
+# Preview the exact API requests: npm run publish -- <episode> --dry-run
+
+episode: ep13-static-zap
+title: Why Door Handles ZAP You
+status: draft
+video: out/static-zap.mp4
+platforms:
+  - youtube
+  - instagram
+  - facebook
+youtube:
+  title: "Why Door Handles ZAP You ⚡ #Shorts"
+  description: |-
+    Shuffling across a carpet, your shoes steal tiny particles called electrons. They have nowhere to go… until you touch metal. ⚡
+
+    We followed them: from the carpet, all over Dash (even his hair stands up), into his fingertip, and across a 3 mm gap as a tiny bolt of lightning.
+
+    It's about 10,000 volts, but far too little current to hurt. The trick: touch metal with a key first. 🔑
+
+    …not with the key in your mouth, Dash. 😬
+
+    What's the worst static shock you've ever had? 👇
+
+    📌 Moral: Rubbing charges you up. Touch metal with a key, not your finger.
+
+    Dash & Newt: brute force vs. physics. Funny shorts that explain real physics in plain words.
+    🔔 Subscribe for a new short every week.
+
+    #shorts #funnyanimation #cartoon #physics #science
+  tags:
+    - dash and newt
+    - funny animation
+    - animated shorts
+    - cartoon shorts
+    - cartoon animation
+    - static electricity
+    - static shock
+    - why do i get shocked
+    - door handle shock
+    - static electricity explained
+    - electrons
+    - triboelectric effect
+    - physics explained
+    - science explained
+    - how it works
+    - 3d animation
+    - learn physics
+    - everyday physics
+    - science shorts
+  category: Comedy
+  playlists:
+    - Dash & Newt — All Episodes
+    - electricity
+    - Dash's Worst Ideas
+  privacy: public
+  made_for_kids: false
+  synthetic_media: false
+  language: en
+  cover_note: Shorts covers can't be set through the API — pick the frame at ~26.7s in the YouTube app.
+instagram:
+  caption: |-
+    Why door handles ZAP you ⚡
+
+    Your shoes steal electrons from the carpet… and the door handle gets them back. ⚡
+
+    10,000 volts, tiny current: a sting, not danger. Touch metal with a key first. 🔑
+
+    Worst static shock you've had? 👇
+
+    Tag the friend who always gets zapped 😂
+    Follow for more funny physics cartoons ✨
+
+    📌 Moral: Rubbing charges you up. Touch metal with a key, not your finger.
+
+    #physics #science #staticelectricity #3danimation #dashandnewt
+  cover_frame_s: 26.7
+  alt_text: "Realistic 3D animation. A young man in an orange scarf shuffles across a carpet toward a door while a boy in a party hat watches. A narrator explains static electricity: glowing electrons hop from the carpet onto his shoe, a faint blue glow spreads over his body and his hair stands up, and in a slow-motion close-up a tiny spark jumps 3 mm from his fingertip to the metal door handle. The boy touches the handle with a key and the spark hits the key. The man tries it holding the key in his teeth and gets zapped."
+  share_to_feed: true
+facebook:
+  title: Why Door Handles ZAP You ⚡ (explained in 40 seconds)
+  description: |-
+    Shuffling across a carpet, your shoes steal tiny particles called electrons. They have nowhere to go… until you touch metal. ⚡
+
+    We followed them: from the carpet, all over Dash (even his hair stands up), into his fingertip, and across a 3 mm gap as a tiny bolt of lightning.
+
+    It's about 10,000 volts, but far too little current to hurt. The trick: touch metal with a key first. 🔑
+
+    …not with the key in your mouth, Dash. 😬
+
+    What's the worst static shock you've ever had? 👇
+
+    📌 Moral: Rubbing charges you up. Touch metal with a key, not your finger.
+
+    Dash & Newt — brute force vs. physics. Follow the page for a new short every week.
+
+    #physics #funnyanimation #dashandnewt
+approval: null
+results: {}

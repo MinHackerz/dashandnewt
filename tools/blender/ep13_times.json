@@ -1,0 +1,83 @@
+{
+ "CUE": {
+  "wide": 0,
+  "macro": 3.959,
+  "hop": 7.03135,
+  "climb": 10.335999999999999,
+  "hair": 14.207999999999998,
+  "door": 17.676,
+  "reach": 20.578999999999997,
+  "spark": 26.6025,
+  "slowEnd": 28.971999999999998,
+  "recoil": 29.122,
+  "facepalm": 30.322,
+  "newtShuffle": 32.757,
+  "keySpark": 36.028679999999994,
+  "gagShuffle": 37.501,
+  "gagZap": 38.951,
+  "card": 41.174,
+  "end": 41.174,
+  "dur": 43.974,
+  "fps": 30
+ },
+ "LINES": {
+  "hook": {
+   "at": 0.35,
+   "seconds": 2.709,
+   "text": "Ever touched a door handle and got ZAPPED? Here's why.",
+   "file": "voices/ep13-final/hook.wav"
+  },
+  "rub": {
+   "at": 3.359,
+   "seconds": 6.677,
+   "text": "When Dash shuffles across the carpet, his rubber soles rub the fibers and steal tiny particles called electrons.",
+   "file": "voices/ep13-final/rub.wav"
+  },
+  "spread": {
+   "at": 10.335999999999999,
+   "seconds": 7.04,
+   "text": "Rubber won't let them escape, so they spread all over him. Even his hair stands up: the extra electrons push each other away.",
+   "file": "voices/ep13-final/spread.wav"
+  },
+  "volts": {
+   "at": 17.676,
+   "seconds": 2.603,
+   "text": "By the door, he's carrying about ten thousand volts.",
+   "file": "voices/ep13-final/volts.wav"
+  },
+  "tip": {
+   "at": 20.578999999999997,
+   "seconds": 3.904,
+   "text": "Metal is an easy road for electrons, so they rush into his fingertip,",
+   "file": "voices/ep13-final/tip.wav"
+  },
+  "jump": {
+   "at": 24.532999999999998,
+   "seconds": 4.139,
+   "text": "and jump the last few millimeters all at once. A tiny bolt of lightning!",
+   "file": "voices/ep13-final/jump.wav"
+  },
+  "zap": {
+   "at": 29.122,
+   "seconds": 3.285,
+   "text": "Lots of volts, but far too little current to hurt. Just a sting.",
+   "file": "voices/ep13-final/zap.wav"
+  },
+  "key": {
+   "at": 32.757,
+   "seconds": 4.544,
+   "text": "Newt's trick? Touch the metal with a key first. The spark hits the key, not your skin.",
+   "file": "voices/ep13-final/key.wav"
+  },
+  "mouth": {
+   "at": 39.501,
+   "seconds": 1.173,
+   "text": "Not in your mouth, Dash.",
+   "file": "voices/ep13-final/mouth.wav"
+  }
+ },
+ "PHYS": {
+  "volts": 10000,
+  "gapMM": 3
+ }
+}

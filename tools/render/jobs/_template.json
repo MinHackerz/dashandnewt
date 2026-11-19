@@ -1,0 +1,21 @@
+{
+  "name": "sNN",
+  "about": "sNN 'Title' — final quality",
+  "blend": "blender/sNN_set.blend",
+  "script": "tools/blender/sNN_render.py",
+  "args": ["final"],
+  "plan": "tools/blender/sNN_plan.json",
+  "times": "tools/blender/sNN_times.json",
+  "local_out": "out/blender/sNN",
+  "picture": "public/renders/sNN.mp4",
+  "composition": "CompositionId",
+  "final": "out/slug.mp4",
+  "env": {"SNN_CLOUD": "1"},
+  "frames_env": "SNN_FRAMES",
+  "out_env": "SNN_OUT",
+  "compute_env": "SNN_COMPUTE",
+  "files": ["blender/sNN_set.blend", "tools/render/thermal_guard.py"],
+  "dirs": ["tools/blender"],
+  "sec_per_frame": {"L40S": 25, "T4": 120},
+  "modal_volume": "render-sNN"
+}

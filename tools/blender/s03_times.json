@@ -1,0 +1,139 @@
+{
+ "FPS": 30,
+ "VO_OFFSET": 0.25,
+ "DUR": 51.89,
+ "FRAMES": 1557,
+ "SHOTS": {
+  "s01_typing": {
+   "t0": 0.0,
+   "t1": 4.09,
+   "f0": 1,
+   "f1": 123,
+   "text": "Your laptop is rendering a video\u2026 and it's getting hot."
+  },
+  "s02_thermal": {
+   "t0": 4.09,
+   "t1": 9.01,
+   "f0": 124,
+   "f1": 270,
+   "text": "Through a thermal camera, the heat comes from one spot. Right above the chip."
+  },
+  "s03_diveA": {
+   "t0": 9.01,
+   "t1": 10.57,
+   "f0": 271,
+   "f1": 317,
+   "text": "So let's go inside."
+  },
+  "s04_diveB": {
+   "t0": 10.57,
+   "t1": 12.81,
+   "f0": 318,
+   "f1": 384,
+   "text": "Under this copper plate is the chip."
+  },
+  "s05_diveC": {
+   "t0": 12.81,
+   "t1": 14.25,
+   "f0": 385,
+   "f1": 428,
+   "text": "And on it, billions of"
+  },
+  "s06_diveD": {
+   "t0": 14.25,
+   "t1": 16.57,
+   "f0": 429,
+   "f1": 497,
+   "text": "tiny switches called transistors."
+  },
+  "s07_electrons": {
+   "t0": 16.57,
+   "t1": 20.57,
+   "f0": 498,
+   "f1": 617,
+   "text": "Every time one switches, electrons are pushed through the silicon."
+  },
+  "s08_bump": {
+   "t0": 20.57,
+   "t1": 25.45,
+   "f0": 618,
+   "f1": 764,
+   "text": "They bump into its atoms, and every bump turns a little electricity into heat."
+  },
+  "s09_array": {
+   "t0": 25.45,
+   "t1": 28.89,
+   "f0": 765,
+   "f1": 867,
+   "text": "A render flips these switches billions of times a second."
+  },
+  "s10_die": {
+   "t0": 28.89,
+   "t1": 32.57,
+   "f0": 868,
+   "f1": 977,
+   "text": "So almost all the power the chip uses\u2026 becomes heat."
+  },
+  "s11_pipes": {
+   "t0": 32.57,
+   "t1": 33.69,
+   "f0": 978,
+   "f1": 1011,
+   "text": "To carry it away,"
+  },
+  "s12_hotend": {
+   "t0": 33.69,
+   "t1": 37.61,
+   "f0": 1012,
+   "f1": 1128,
+   "text": "this copper pipe holds a little water. The chip turns it into vapour,"
+  },
+  "s13_vapour": {
+   "t0": 37.61,
+   "t1": 39.65,
+   "f0": 1129,
+   "f1": 1190,
+   "text": "the vapour rushes to the cold end,"
+  },
+  "s14_coldend": {
+   "t0": 39.65,
+   "t1": 42.41,
+   "f0": 1191,
+   "f1": 1272,
+   "text": "turns back into water, and soaks back through."
+  },
+  "s15_fan": {
+   "t0": 42.41,
+   "t1": 45.37,
+   "f0": 1273,
+   "f1": 1361,
+   "text": "Then a fan blows air through thin metal fins,"
+  },
+  "s16_vents": {
+   "t0": 45.37,
+   "t1": 46.81,
+   "f0": 1362,
+   "f1": 1404,
+   "text": "and out the side vents."
+  },
+  "s17_touch": {
+   "t0": 46.81,
+   "t1": 49.21,
+   "f0": 1405,
+   "f1": 1476,
+   "text": "That's why this side gets so hot."
+  },
+  "s18_end": {
+   "t0": 49.21,
+   "t1": 51.89,
+   "f0": 1477,
+   "f1": 1557,
+   "text": "So never block the vents."
+  }
+ },
+ "TOUCH": {
+  "reach": 1404,
+  "contact": 1426,
+  "lift": 1465
+ }
+}
